@@ -43,6 +43,32 @@ body{
     z-index: 1000;
     padding-bottom: 2rem;
 }
+a.AI{
+    color: var(--trd-bg-color);
+}
+.AI{
+    position: fixed;
+    right: -68px;          
+    top: 80%;             
+    background: var(--main-color);     
+    color: var(#101010);
+    padding: 15px 18px;
+    border-radius: 30px 0 0 30px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    /* z-index: 1000; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+.AI p{
+    display: inline;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.AI:hover{
+    right: -1px;
+}
 #menu-icon{
     font-size: 3.5rem;
     color: var(--main-color);
@@ -527,4 +553,5 @@ section{
     .services-box:hover{
         transform: scale(1.05);
     }
+
 }
