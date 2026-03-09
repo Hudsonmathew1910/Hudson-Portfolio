@@ -43,6 +43,19 @@ body{
     z-index: 1000;
     padding-bottom: 2rem;
 }
+
+
+.about-scroll-x{
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    max-width: 500px;
+}
+
+.about-scroll-x p{
+    min-width: 400px;
+}
+
 a.AI{
     color: var(--trd-bg-color);
 }
@@ -52,7 +65,7 @@ a.AI{
     top: 80%;             
     background: var(--main-color);     
     color: var(#101010);
-    padding: 15px 18px;
+    padding: 8px 10px;
     border-radius: 30px 0 0 30px;
     font-weight: 600;
     cursor: pointer;
@@ -73,6 +86,10 @@ a.AI{
     font-size: 3.5rem;
     color: var(--main-color);
     display: none;
+}
+.ai_home a{
+    color: var(--main-color);
+    font-size: 24px;
 }
 .logo{
     font-size: 3rem;
@@ -389,7 +406,7 @@ section{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease;
-    height: 650px;
+    height: auto;
 }
 .project-card:hover{
     box-shadow: 0 0 25px var(--main-color),
@@ -553,5 +570,4 @@ section{
     .services-box:hover{
         transform: scale(1.05);
     }
-
 }
