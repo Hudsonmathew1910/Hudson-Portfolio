@@ -123,6 +123,12 @@ span{
     /* transform: scale(1.1); */
     border-bottom: 2px solid var(--main-color);
 }
+.project-card{
+    height: 780px;
+    @media screen and (max-width: 768px) {
+        height: 1050px;
+    }
+}
 .gradient-btn{
     font-size: 1.8rem;
     font-weight: 500;
