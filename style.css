@@ -595,7 +595,23 @@ section{
     .services-box:hover{
         transform: scale(1.05);
     }
+    .project-box{
+        gap: 3rem;
+        row-gap: 3rem;
+    }
     .project-card{
-        height: 1050px;
+        height: 650px;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+    .project-card > img {
+        width: 250px;
+        height: 200px;
+    }
+    .project-card h3{
+        font-size: 2rem;
+    }
+    .project-card p{
+        font-size: 1.4rem;
     }
 }
