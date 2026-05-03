@@ -604,14 +604,15 @@ section{
         padding: 2rem 1rem;
         gap: 1rem;
     }
+   }
     .project-card > img {
-        width: 150px;
-        height: 100px;
+        width: 100px;
+        height: 60px;
     }
     .project-card h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .project-card p{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
