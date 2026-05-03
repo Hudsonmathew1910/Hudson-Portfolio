@@ -600,19 +600,18 @@ section{
         row-gap: 3rem;
     }
     .project-card{
-        height: 650px;
+        height: 700px;
         padding: 2rem 1rem;
         gap: 1rem;
     }
-   }
     .project-card > img {
-        width: 80px;
-        height: 40px;
+        width: 320px;
+        height: 200px;
     }
     .project-card h3{
-        font-size: 0.6rem;
+        font-size: 1.6rem;
     }
     .project-card p{
-        font-size: 0.4rem;
+        font-size: 1.4rem;
     }
 }
