@@ -117,11 +117,31 @@
     </div>
     </section>
 
-    <section class="project" id="project">
+        <section class="project" id="project">
         <h2 class="heading">
             Projects
         </h2>
         <div class="project-box">
+            <div class="project-card">
+                <img src="H1.png" alt="">
+                <h3>Hero's AI</h3>
+                <p>Hero’s AI is a Django-based, multi-modal personal assistant that orchestrates multiple LLM providers (Google Gemini + OpenRouter, with automatic fallback) to deliver reliable text chat, coding help, voice responses, web search, and file Q&A. A custom NLP pipeline cleans input, detects intent with regex-driven routing, and selects the best handler/model per task while adapting token budgets for speed vs depth. Its Infinsight module adds 
+                    RAG-powered analytics for CSV/Excel/PDF: documents are chunked, embedded (gemini-embedding-001), stored in Pinecone, and retrieved via semantic search to ground answers in user data. For quantitative questions, the system generates and safely executes Python/Pandas to produce analyst-style reports (trends, forecasting, correlations). With per-user encrypted API key storage, Google OAuth, and persistent chat sessions, Hero’s AI showcases end-to-end LLM, NLP, RAG, and ML engineering in a production-ready web app.</p>
+                    <div style="display:flex; gap:10px;" class="btn-group">
+                    <a href="https://hero-s-ai.onrender.com/"class="btn">View Project</a>
+                    <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"class="btn">View Document</a>
+                    </div>
+            </div>
+            <div class="project-card">
+                <img src="I1.png" alt="">
+                <h3>Infinsight</h3>
+                <p>Infinsight is the RAG-powered data analytics layer inside Hero’s AI, built to turn uploaded files into queryable knowledge. Users can upload CSV, Excel, or PDF reports; the system parses and chunks content (row summaries for tables, page-level chunks for PDFs), then generates embeddings with gemini-embedding-001 and stores them in Pinecone under a user-specific namespace. On each question, Infinsight performs semantic retrieval to surface 
+                    the most relevant chunks, injects that grounded context (plus dataset schema) into the LLM, and produces answers that stay tied to the user’s data. For quantitative requests (totals, trends, forecasting, correlations), it generates Python/Pandas code and executes it safely in a sandboxed interpreter, then converts results into a clear, analyst-style report. The result is accurate, explainable, natural-language analytics without manual coding.</p>
+                    <div style="display:flex; gap:10px;" class="btn-group">
+                    <a href="https://hero-s-ai.onrender.com/infinsight/"class="btn">View Project</a>
+                    <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"class="btn">View Document</a>
+                    </div>
+            </div>
             <div class="project-card">
                 <img src="E1.png" alt="">
                 <h3>EpicOutlet</h3>
@@ -130,11 +150,11 @@
 
                     The system follows Django’s MVT architecture, stores data in PostgreSQL (Supabase), hosts images on Cloudinary, serves static files with WhiteNoise, and is deployed on Render using Gunicorn. It also provides a REST API (via django-tastypie) under /api/v1/ for external access to product and related data. Overall, the project demonstrates end-to-end web development plus modern AI integration and cloud deployment in a production-ready setup.</p>
                     <div style="display:flex; gap:10px;" class="btn-group">
-                    <a href="https://epicoutlet.onrender.com/"class="btn">View project</a>
+                    <a href="https://epicoutlet.onrender.com/"class="btn">View Project</a>
                     <a href="https://docs.google.com/document/d/18bkyRjbSQLDdkaHc0iutdPh3kzoF8-Zd/edit?pli=1"class="btn">View Document</a>
                     </div>
             </div>
-            <div class="project-card">
+            <!-- <div class="project-card">
                 <img src="R1.png" alt="">
                 <h3>RetroXperience</h3>
                 <p>RetroXperience (Django Project)
@@ -142,10 +162,10 @@
 
 A key feature is its 1–5 star rating system, where visitors can rate movies anonymously and the app calculates and displays average ratings using Django’s ORM aggregation. The project follows Django’s MVT architecture, includes a REST API (via django-tastypie) for external access to movie data, and is set up for cloud deployment with Gunicorn and WhiteNoise (targeting platforms like Render). It also includes pandas and scikit-learn, setting the foundation for adding a future movie recommendation system.</p>
                     <div style="display:flex; gap:10px;" class="btn-group">
-                        <a href="https://retroxperience.onrender.com/"class="btn">View project</a>
+                        <a href="https://retroxperience.onrender.com/"class="btn">View Project</a>
                         <a href="https://docs.google.com/document/d/1sz86m46YaRcqviIBOL-2a_fQZ_bdZ2vq/edit"class="btn">View Document</a>
                     </div>
-            </div>
+            </div> -->
             <div class="project-card">
                 <img src="S1.png" alt="">
                 <h3>Spaceship Titanic</h3>
