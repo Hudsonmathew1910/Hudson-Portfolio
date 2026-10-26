@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | Hudson Mathew</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#080808">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .not-found {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2.4rem;
+            padding: 8rem var(--gutter);
+        }
+        .not-found .code {
+            font-family: var(--font-mono);
+            font-size: 1.3rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--sage);
+        }
+        .not-found h1 {
+            font-size: clamp(4.4rem, 7vw, 8rem);
+            font-weight: 800;
+            letter-spacing: -0.045em;
+            line-height: 1;
+            color: var(--cream);
+        }
+        .not-found p {
+            max-width: 46ch;
+            font-size: 1.7rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+        .not-found .btn-row { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+    </style>
+</head>
+<body>
+    <main class="not-found">
+        <span class="code">Error 404</span>
+        <h1>This page doesn't exist.</h1>
+        <p>The link may be broken or the page may have moved. Head back to the portfolio to see Hudson's projects and get in touch.</p>
+        <div class="btn-row">
+            <a href="/" class="btn btn-primary">Back to portfolio</a>
+            <a href="/#contact" class="btn btn-secondary">Contact Hudson</a>
+        </div>
+    </main>
+</body>
+</html>

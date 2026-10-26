@@ -3,238 +3,1710 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hudson | Portfolio</title>
-    <link rel="icon" href="img3.png">
+    <title>Hudson Mathew | Python &amp; AI Developer</title>
+    <meta name="description" content="Hudson Mathew is a Python and AI developer in Bengaluru building production AI platforms, RAG systems and full-stack Django apps. Open to full-time roles and internships.">
+    <meta name="author" content="Hudson Mathew">
+    <meta name="theme-color" content="#080808">
+    <meta name="color-scheme" content="dark">
+
+    <!-- SITE URL: replace "your-portfolio.vercel.app" here, in robots.txt and in sitemap.xml once the domain is known -->
+    <link rel="canonical" href="https://your-portfolio.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Hudson Mathew">
+    <meta property="og:title" content="Hudson Mathew | Python &amp; AI Developer">
+    <meta property="og:description" content="Python and AI developer building production AI platforms, RAG systems and full-stack apps. Open to work in Bengaluru, Chennai and Coimbatore.">
+    <meta property="og:url" content="https://your-portfolio.vercel.app/">
+    <meta property="og:image" content="https://your-portfolio.vercel.app/photos/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hudson Mathew, Python and AI developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hudson Mathew | Python &amp; AI Developer">
+    <meta name="twitter:description" content="Python and AI developer building production AI platforms, RAG systems and full-stack apps.">
+    <meta name="twitter:image" content="https://your-portfolio.vercel.app/photos/og-image.jpg">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="photos/img.webp" fetchpriority="high">
+
     <link rel="stylesheet" href="style.css">
-    <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hudson Mathew",
+        "jobTitle": "Python & AI Developer",
+        "url": "https://your-portfolio.vercel.app/",
+        "image": "https://your-portfolio.vercel.app/photos/og-image.jpg",
+        "email": "mailto:hudsonmathew2004@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+        "alumniOf": "Don Bosco College of Arts & Science, Tuticorin",
+        "knowsAbout": ["Python", "Django", "Machine Learning", "RAG", "LLM Orchestration", "Data Analysis"],
+        "sameAs": [
+            "https://github.com/Hudsonmathew1910",
+            "https://www.linkedin.com/in/hudson-mathew-J"
+        ]
+    }
+    </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <header class="header">
-        <a href="#home" class="logo">
-            Hudson <span>Mathew</span>
-        </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
+        <div class="header-brand">
+            <a href="#home" class="logo">Hudson <span>Mathew</span></a>
+            <span class="status-pill"><span class="status-dot"></span> Open to Work</span>
+        </div>
+        <button type="button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><i class="bx bx-menu"></i></button>
+        <nav class="navbar" id="site-nav" aria-label="Main">
+            <a href="#about"><i class="bx bx-user"></i> About</a>
+            <a href="#project"><i class="bx bx-folder"></i> Projects</a>
+            <a href="#skills"><i class="bx bx-code-alt"></i> Skills</a>
+            <a href="#experience"><i class="bx bx-briefcase-alt-2"></i> Experience</a>
+            <a href="#journey"><i class="bx bx-trending-up"></i> Journey</a>
+            <a href="#services"><i class="bx bx-layer"></i> Services</a>
+            <a href="#contact"><i class="bx bx-envelope"></i> Contact</a>
         </nav>
-        <a href="mailto:hudsonmathew2004@gmail.com"><button class="gradient-btn">Contact me</button></a>
+        <div class="header-action">
+            <a href="#contact" class="btn btn-header"><i class="bx bx-paper-plane"></i> Let's Talk</a>
+        </div>
     </header>
-    <a class="AI" href="https://ai-portfolio--hudsonmathew.replit.app/">
-        <i class="fa-solid fa-robot"> <p>Chat</p></i>
-    </a>
+    <!-- Floating Roaming Screen Companion: Huddy -->
+    <div id="huddy-roamer" class="huddy-roamer" title="Click me to chat with Huddy!">
+        <div class="roamer-bubble" id="roamer-bubble">
+            <span>Ask me about Hudson!</span>
+        </div>
+        <div class="roamer-character">
+            <div class="huddy-cap">
+                <div class="cap-dome"></div>
+                <div class="cap-visor"></div>
+            </div>
+            <div class="blob-body">
+                <div class="blob-eye blob-eye-left"></div>
+                <div class="blob-eye blob-eye-right"></div>
+                <div class="blob-mouth"></div>
+            </div>
+        </div>
+    </div>
+    <main id="main">
     <section class="home" id="home">
         <div class="home-content">
-            <h1 style="font-size: 40px">Hi, It's <span style="font-size: 80px">Hudson</span> </h1>
-            <h3>I'm a <span>Python Dev</span></h3>
-            <p>Python | Data Analysis  | Full Stack Dev </p>
+            <span class="hero-eyebrow"><span class="live-dot-pulse"></span> Available for work &middot; Bengaluru, India</span>
+            <h1>Hi, It's <span>Hudson</span></h1>
+            <h3>I'm a <span>Python Dev</span> building AI products that ship.</h3>
+            <ul class="hero-roles">
+                <li>Python</li>
+                <li>Data Analysis</li>
+                <li>AI/ML</li>
+                <li>Full Stack Dev</li>
+            </ul>
                 <div class="social-icon">
-                    <a href="https://github.com/Hudsonmathew1910">
+                    <a href="https://github.com/Hudsonmathew1910" title="GitHub">
                         <i class="bx bxl-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/hudson-mathew-J">
+                    <a href="https://www.linkedin.com/in/hudson-mathew-J" title="LinkedIn">
                         <i class="bx bxl-linkedin-square"></i>
                     </a>
-                    <a href="https://www.instagram.com/j.hudson_mathew?igsh=bm9sYmNjb3IyZmRu">
+                    <a href="https://www.instagram.com/j.hudson_mathew?igsh=bm9sYmNjb3IyZmRu" title="Instagram">
                         <i class="bx bxl-instagram-alt"></i>
                     </a>
-                    <a href="mailto:hudsonmathew2004@gmail.com">
+                    <a href="mailto:hudsonmathew2004@gmail.com" title="Email">
                         <i class="bx bx-envelope"></i>
                     </a>
                 </div>
                 <div class="btn-group">
-                    <a href="#contact" class="btn">Hire</a>
-                    <a href="mailto:hudsonmathew2004@gmail.com" class="btn">Contact</a>
+                    <a href="#project" class="btn btn-primary"><i class="bx bx-rocket"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="bx bx-conversation"></i> Contact Me</a>
                 </div>
         </div>
         <div class="home-img">
-            <img src="img.png" alt="">
+            <img src="photos/img.webp" width="900" height="845" alt="Portrait of Hudson Mathew" fetchpriority="high" decoding="async">
         </div>
     </section>
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img2.png" alt="">
+            <img src="photos/img2.webp" width="900" height="845" alt="Hudson Mathew, Python and AI developer" loading="lazy" decoding="async">
         </div>
             <div class="about-content">
+                <span class="section-eyebrow"><b>00</b> About</span>
                 <h2>About <span>Me</span></h2>
-                <p>Hello, I’m Hudson Mathew, a versatile developer specializing in Python, frontend and backend engineering, and UI/UX design. I enjoy turning ideas into reliable, efficient, and visually polished products that solve real problems and deliver smooth user experiences.</p>
-                <p id="more-text" style="display: none; margin-top: 10px;">My core strength is Python, building automation tools, backend systems, APIs, and data-processing workflows with clean, maintainable code. On the frontend, I create responsive, interactive interfaces using HTML, CSS, and JavaScript, ensuring applications look great and work seamlessly across devices. On the backend, I develop secure, scalable server-side logic, database-driven features, and integrations that keep applications stable and production-ready.
-                    <br><br>
-                    I also focus on UI/UX design, crafting clean layouts, intuitive navigation, and consistent components for easy user interaction. With a strong problem-solving mindset and continuous learning approach, I aim to contribute to projects that challenge me and deliver software that is practical, user-centered, and impactful.</p>
-                    <a href="#" class="btn" id="read-more-btn">Read More</a>
-                    <div class="ai-chat ai_home">
-                        <a href="https://ai-portfolio--hudsonmathew.replit.app/" target="_blank">
-                            <i class="fa-solid fa-robot"></i>
-                            <span style="font-size: 18px; font-weight: bold;">Ask AI about me</span>
-                        </a>
-                </div>
-                </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-        <div class="services-container">
-        <div class="services-box">
-            <div class="services-info">
-                <i class="fa-brands fa-python"></i>
-                <h4>Python Development</h4>
-                <p>Python development services focused on building clean, scalable, and maintainable applications. This includes creating automation scripts, developing Django-based backend systems, and handling data processing workflows. REST APIs are built and integrated to connect apps, databases, and third-party services. AI/API integrations are also implemented, including chatbot-style features that add smart functionality to products.</p>
-                    
-                </div>
-        </div>
-        <div class="services-box">
-            <div class="services-info">
-                <i class="bx bx-code"></i>
-                <h4>Frontend Development</h4>
-                <p>Frontend development services focused on building clean, responsive, and user-friendly web interfaces. I create well-structured pages with HTML, style modern layouts with CSS, and add interactivity using JavaScript. I build reusable UI components like navbars, cards, forms, and buttons with consistent design across pages. I also integrate frontend with backend systems (like Django templates and APIs) to deliver dynamic, real-world web apps.</p>
-                    
-                </div>
-        </div>
-        <div class="services-box">
-            <div class="services-info">
-                <i class="bx bx-code-curly"></i>
-                <h4>Backend Development</h4>
-                <p>Backend development services focused on building secure, scalable, and high-performance systems. I develop application logic, create REST APIs, and connect applications to databases for reliable data handling. I implement authentication, authorization, validation, and security best practices, and integrate third-party services to support real-world features and smooth deployments.s.</p>
-                    
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="services-info">
-                    <i class="bx bxl-figma"></i>
-                    <h4>UI / UX</h4>
-                    <p>UI/UX design services focused on creating clean, modern, and easy-to-use digital experiences. I design layouts, components, and visual systems that stay consistent across screens and features. I improve user flows, navigation, and accessibility so products feel simple and intuitive to use. I focus on responsive, user-centered design that enhances usability and overall product quality.</p>
-                        
+                <div class="about-text-wrapper">
+                    <p>I’m Hudson, a Python and AI developer based in Bengaluru. I build full-stack products—from backend architecture and AI integrations to the interfaces people actually touch. My flagship project, Hero’s AI, is a live multi-model AI platform. I love turning ideas into products that work reliably and feel great to use.</p>
+                    <div id="more-text" style="display: none;">
+                        <p>I come from Tuticorin, studied BCA at Don Bosco College, and now live in Bengaluru. Somewhere between my first Python script and my first deployed app, I realized I learn best when I’m building something real.</p>
+                        <p>That habit led to <strong>Hero’s AI</strong>, my biggest project so far. It started as a small Django prototype and grew into a live AI platform. It features an assistant that intelligently routes between multiple language models, a data analyst called <strong>Infinsight</strong> that answers questions about CSV and Excel files, and a browser extension called <strong>Zeno</strong>. Nothing about it was easy—models failed, APIs timed out, and my initial fallback logic was too slow. Each bottleneck pushed me to master concurrent requests, vector search, and secure key handling.</p>
+                        <p>Before that, I spent 2025 as a Full Stack Intern at Postulate, working on real frontend and backend features for actual production requirements, not just tutorials. Currently, I’m deepening my Python, Data Science, and AI skills at Pyspider.</p>
+                        <p>I also bring a strong creative side—designing, illustrating, and editing. Growing up on story-driven games like <em>Uncharted</em> and <em>Detroit: Become Human</em> shaped how I think about software: a great product should have flow, feel natural, and connect with the user. That’s why I care just as much about the interface as the backend logic.</p>
+                        <p>What I’m looking for now is a team building intelligent, data-driven products where I can contribute from day one and continuously learn from people better than me. If you have an idea, a challenge, or just want to talk tech, I’d love to connect!</p>
                     </div>
-            </div>
-    </div>
+                </div>
+                <div class="about-highlights-strip">
+                    <div class="about-metric-card">
+                        <i class="bx bx-layer"></i>
+                        <div>
+                            <span class="metric-number">4+</span>
+                            <span class="metric-label">Live Builds</span>
+                        </div>
+                    </div>
+                    <div class="about-metric-card">
+                        <i class="bx bx-brain"></i>
+                        <div>
+                            <span class="metric-number">RAG & AI</span>
+                            <span class="metric-label">Multi-LLM Dispatcher</span>
+                        </div>
+                    </div>
+                    <div class="about-metric-card">
+                        <i class="bx bxl-python"></i>
+                        <div>
+                            <span class="metric-number">Django & ML</span>
+                            <span class="metric-label">Backend Architecture</span>
+                        </div>
+                    </div>
+                    <div class="about-metric-card">
+                        <i class="bx bx-map-pin"></i>
+                        <div>
+                            <span class="metric-number">Bengaluru</span>
+                            <span class="metric-label">Open to Hybrid / Remote</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-btn-group">
+                    <a href="#" class="btn btn-secondary" id="read-more-btn"><i class="bx bx-book-reader"></i> Read Story</a>
+                        <div class="ai-chat ai_home">
+                            <a href="javascript:void(0);" id="ai-about-btn" class="ai-pill-btn">
+                                <div class="huddy-mini-blob">
+                                    <div class="huddy-cap">
+                                        <div class="cap-dome"></div>
+                                        <div class="cap-visor"></div>
+                                    </div>
+                                    <div class="blob-body">
+                                        <div class="blob-eye blob-eye-left"></div>
+                                        <div class="blob-eye blob-eye-right"></div>
+                                    </div>
+                                </div>
+                                <span>Ask AI about me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
     </section>
 
-        <section class="project" id="project">
-        <h2 class="heading">
-            Projects
-        </h2>
-        <div class="project-box">
-            <div class="project-card">
-                <img src="H1.png" alt="">
+    <!-- 1. Featured & Flagship Projects (Brought to Top) -->
+    <section class="project reveal-item" id="project">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>01</b> Selected Work</span>
+            <h2 class="heading">Featured <span>Projects</span></h2>
+            <p class="section-subline">Real deployed software solving multi-model AI, vector RAG, and full-stack challenges.</p>
+        </div>
+
+        <!-- Featured Project: Hero's AI -->
+        <div class="project-featured reveal-item">
+            <div class="project-featured-img project-gallery" data-gallery="heros-ai">
+                <div class="gallery-slides">
+                    <img src="images/H1.webp" width="1600" height="946" alt="Hero's AI Dashboard" class="gallery-img active" data-index="0" loading="lazy" decoding="async">
+                    <img src="images/H2.webp" width="1465" height="873" alt="Hero's AI Chat Interface" class="gallery-img" data-index="1" loading="lazy" decoding="async">
+                    <img src="images/H3.webp" width="1600" height="740" alt="Hero's AI Analytics & Tools" class="gallery-img" data-index="2" loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-nav-controls">
+                    <button type="button" class="gallery-prev" aria-label="Previous image"><i class="bx bx-chevron-left"></i></button>
+                    <div class="gallery-dots">
+                        <span class="gallery-dot active" data-index="0"></span>
+                        <span class="gallery-dot" data-index="1"></span>
+                        <span class="gallery-dot" data-index="2"></span>
+                    </div>
+                    <button type="button" class="gallery-next" aria-label="Next image"><i class="bx bx-chevron-right"></i></button>
+                </div>
+                <div class="project-status-overlay">
+                    <span class="live-dot-pulse"></span> Live in Production
+                </div>
+            </div>
+            <div class="project-featured-content">
+                <div class="featured-badge-row">
+                    <span class="project-category-badge"><i class="bx bx-crown"></i> Flagship AI Platform</span>
+                    <span class="project-release-badge"><i class="bx bx-git-repo-forked"></i> Multi-Model + RAG</span>
+                </div>
                 <h3>Hero's AI</h3>
-                <p>Hero’s AI is a Django-based, multi-modal personal assistant that orchestrates multiple LLM providers (Google Gemini + OpenRouter, with automatic fallback) to deliver reliable text chat, coding help, voice responses, web search, and file Q&A. A custom NLP pipeline cleans input, detects intent with regex-driven routing, and selects the best handler/model per task while adapting token budgets for speed vs depth. Its Infinsight module adds 
-                    RAG-powered analytics for CSV/Excel/PDF: documents are chunked, embedded (gemini-embedding-001), stored in Pinecone, and retrieved via semantic search to ground answers in user data. For quantitative questions, the system generates and safely executes Python/Pandas to produce analyst-style reports (trends, forecasting, correlations). With per-user encrypted API key storage, Google OAuth, and persistent chat sessions, Hero’s AI showcases end-to-end LLM, NLP, RAG, and ML engineering in a production-ready web app.</p>
-                    <div style="display:flex; gap:10px;" class="btn-group">
-                    <a href="https://hero-s-ai.alwaysdata.net/"class="btn">View Project</a>
-                    <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"class="btn">View Document</a>
-                    </div>
-            </div>
-            <div class="project-card">
-                <img src="I1.png" alt="">
-                <h3>Infinsight</h3>
-                <p>Infinsight is the RAG-powered data analytics layer inside Hero’s AI, built to turn uploaded files into queryable knowledge. Users can upload CSV, Excel, or PDF reports; the system parses and chunks content (row summaries for tables, page-level chunks for PDFs), then generates embeddings with gemini-embedding-001 and stores them in Pinecone under a user-specific namespace. On each question, Infinsight performs semantic retrieval to surface 
-                    the most relevant chunks, injects that grounded context (plus dataset schema) into the LLM, and produces answers that stay tied to the user’s data. For quantitative requests (totals, trends, forecasting, correlations), it generates Python/Pandas code and executes it safely in a sandboxed interpreter, then converts results into a clear, analyst-style report. The result is accurate, explainable, natural-language analytics without manual coding.</p>
-                    <div style="display:flex; gap:10px;" class="btn-group">
-                    <a href="https://hero-s-ai.alwaysdata.net/infinsight/"class="btn">View Project</a>
-                    <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"class="btn">View Document</a>
-                    </div>
-            </div>
-            <div class="project-card">
-                <img src="E1.png" alt="">
-                <h3>EpicOutlet</h3>
-                <p>EpicOutlet (Django Project)
-                    EpicOutlet is a full-stack e-commerce web application built with Python and Django that lets users browse, search, and purchase products across categories like electronics, fashion, groceries, and home items. It includes user authentication, a shopping cart, a favourites list, and an AI shopping chatbot (Shop-Bot) that helps users find products through natural-language queries (for example, “phones under ₹30,000”) by searching the product database with filters like category and price range.
+                <p class="project-tagline">One AI assistant that picks the right brain for every question.</p>
+                <p class="project-featured-desc">
+                    A production-ready AI platform powered by Django and Python. Its intelligent Baymax dispatcher classifies incoming queries via an NLP intent router before routing to the optimal LLM with an automatic Gemini &rarr; OpenRouter &rarr; Groq fallback chain and concurrent fast mode racing.
+                </p>
 
-                    The system follows Django’s MVT architecture, stores data in PostgreSQL (Supabase), hosts images on Cloudinary, serves static files with WhiteNoise, and is deployed on Render using Gunicorn. It also provides a REST API (via django-tastypie) under /api/v1/ for external access to product and related data. Overall, the project demonstrates end-to-end web development plus modern AI integration and cloud deployment in a production-ready setup.</p>
-                    <div style="display:flex; gap:10px;" class="btn-group">
-                    <a href="https://epicoutlet.onrender.com/"class="btn">View Project</a>
-                    <a href="https://docs.google.com/document/d/18bkyRjbSQLDdkaHc0iutdPh3kzoF8-Zd/edit?pli=1"class="btn">View Document</a>
+                <!-- Impact Highlights (No wall of text) -->
+                <div class="project-metrics-grid">
+                    <div class="p-metric-item">
+                        <i class="bx bx-bolt-circle"></i>
+                        <span>50-75% Latency Cut (Fast Mode)</span>
                     </div>
-            </div>
-            <!-- <div class="project-card">
-                <img src="R1.png" alt="">
-                <h3>RetroXperience</h3>
-                <p>RetroXperience (Django Project)
-                    RetroXperience is a Django-based movie discovery web application focused on helping users explore retro and classic films using a large real-world Netflix titles CSV dataset. It lets users browse movies in a paginated list, filter by genre and release year, search by title, and open a detail page with full movie information. The platform also provides a clean and responsive user interface that makes browsing and discovering movies simple and user-friendly.
+                    <div class="p-metric-item">
+                        <i class="bx bx-shield-quarter"></i>
+                        <span>3-Tier Fallback (Zero Dead Ends)</span>
+                    </div>
+                    <div class="p-metric-item">
+                        <i class="bx bx-microphone"></i>
+                        <span>Interruptible Voice Interaction</span>
+                    </div>
+                    <div class="p-metric-item">
+                        <i class="bx bx-extension"></i>
+                        <span>Zeno Chrome/Edge Extension</span>
+                    </div>
+                </div>
 
-A key feature is its 1–5 star rating system, where visitors can rate movies anonymously and the app calculates and displays average ratings using Django’s ORM aggregation. The project follows Django’s MVT architecture, includes a REST API (via django-tastypie) for external access to movie data, and is set up for cloud deployment with Gunicorn and WhiteNoise (targeting platforms like Render). It also includes pandas and scikit-learn, setting the foundation for adding a future movie recommendation system.</p>
-                    <div style="display:flex; gap:10px;" class="btn-group">
-                        <a href="https://retroxperience.onrender.com/"class="btn">View Project</a>
-                        <a href="https://docs.google.com/document/d/1sz86m46YaRcqviIBOL-2a_fQZ_bdZ2vq/edit"class="btn">View Document</a>
+                <div class="project-tech-pills">
+                    <span><i class="bx bxl-django"></i> Django 5.2</span>
+                    <span><i class="bx bxl-python"></i> Python 3.11</span>
+                    <span><i class="bx bx-data"></i> Pinecone</span>
+                    <span><i class="bx bx-chip"></i> Groq</span>
+                    <span><i class="bx bx-brain"></i> Gemini</span>
+                    <span><i class="bx bx-cloud"></i> OpenRouter</span>
+                </div>
+                
+                <div class="btn-group project-actions">
+                    <a href="https://hero-s-ai.alwaysdata.net/" target="_blank" class="btn btn-live"><i class="bx bx-link-external"></i> Live Demo</a>
+                    <button type="button" class="btn btn-case-study" data-target="modal-heros-ai"><i class="bx bx-book-open"></i> Deep Dive Case Study</button>
+                    <a href="https://github.com/Hudsonmathew1910/Hero-s-AI" target="_blank" class="btn btn-github" title="View Source"><i class="bx bxl-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Project Grid: Infinsight, Spaceship Titanic, EpicOutlet -->
+        <div class="project-compact-grid">
+            <!-- Project 2: Infinsight -->
+            <div class="project-compact reveal-item" data-project-id="infinsight">
+                <div class="project-compact-img-wrap project-gallery" data-gallery="infinsight">
+                    <div class="gallery-slides">
+                        <img src="images/I1.webp" width="1600" height="723" alt="Infinsight Query Engine" class="gallery-img active" data-index="0" loading="lazy" decoding="async">
+                        <img src="images/I2.webp" width="1600" height="918" alt="Infinsight Data Visualizer" class="gallery-img" data-index="1" loading="lazy" decoding="async">
                     </div>
-            </div> -->
-            <div class="project-card">
-                <img src="S1.png" alt="">
-                <h3>Spaceship Titanic</h3>
-                <p>Spaceship Titanic (Weighted Ensemble Model) is a Kaggle machine learning project that predicts whether passengers were “Transported” after a spacetime anomaly collision. It uses features like age, home planet, destination, cabin details, and amenity spending to clean missing values, engineer cabin-based features (Deck/Number/Side), encode categories, and scale data for training. Multiple models (Logistic Regression, Random Forest, XGBoost, CatBoost, AdaBoost, and a Deep Neural Network) are trained and combined using a weighted ensemble to improve accuracy over any single approach. The final system produces a submission-ready CSV and is evaluated using standard classification metrics, showing strong preprocessing, balanced model contribution through weighting, and improved prediction reliability on unseen test data.</p>
-                    <div style="display:flex; gap:10px;" class="btn-group">
-                        <a href="https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML"class="btn">View Project</a>
-                        <a href="https://docs.google.com/document/d/1_oodzjCMsRzYy4F0RZciY5jI-XosqVEm/edit?usp=sharing&ouid=112724315131285411422&rtpof=true&sd=true"class="btn">View Document</a>
+                    <div class="gallery-nav-controls mini-controls">
+                        <button type="button" class="gallery-prev" aria-label="Previous image"><i class="bx bx-chevron-left"></i></button>
+                        <div class="gallery-dots">
+                            <span class="gallery-dot active" data-index="0"></span>
+                            <span class="gallery-dot" data-index="1"></span>
+                        </div>
+                        <button type="button" class="gallery-next" aria-label="Next image"><i class="bx bx-chevron-right"></i></button>
                     </div>
+                    <span class="compact-cat-tag"><i class="bx bx-bar-chart-alt-2"></i> RAG Analytics</span>
+                </div>
+                <div class="project-compact-info">
+                    <h3>Infinsight</h3>
+                    <p class="project-tagline">Upload data files. Ask questions in plain English.</p>
+                    <div class="compact-metric-pills">
+                        <span><i class="bx bx-check"></i> Plain English &rarr; Pandas</span>
+                        <span><i class="bx bx-lock-alt"></i> Sandboxed asteval Execution</span>
+                        <span><i class="bx bx-data"></i> Pinecone Vector RAG</span>
+                    </div>
+                    <div class="project-tech-mini">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Pinecone</span>
+                        <span>Gemini Embeddings</span>
+                    </div>
+                </div>
+                <div class="btn-group project-actions">
+                    <a href="https://hero-s-ai.alwaysdata.net/infinsight/" target="_blank" class="btn btn-live"><i class="bx bx-link-external"></i> Live Demo</a>
+                    <button type="button" class="btn btn-case-study" data-target="modal-infinsight"><i class="bx bx-book-open"></i> Case Study</button>
+                    <a href="https://github.com/Hudsonmathew1910/Hero-s-AI" target="_blank" class="btn btn-github" title="Source Code"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3: Spaceship Titanic -->
+            <div class="project-compact reveal-item" data-project-id="spaceship_titanic">
+                <div class="project-compact-img-wrap">
+                    <img src="images/S1.webp" width="1600" height="796" alt="Spaceship Titanic" loading="lazy" decoding="async">
+                    <span class="compact-cat-tag"><i class="bx bx-network-chart"></i> Kaggle ML</span>
+                </div>
+                <div class="project-compact-info">
+                    <h3>Spaceship Titanic</h3>
+                    <p class="project-tagline">Optimized weighted ensemble of 8 algorithms for binary classification.</p>
+                    <div class="compact-metric-pills">
+                        <span><i class="bx bx-check"></i> 8-Algorithm Weighted Blending</span>
+                        <span><i class="bx bx-wrench"></i> Cabin Deck/Num/Side Decomposition</span>
+                        <span><i class="bx bx-line-chart"></i> CatBoost + XGBoost + DNN</span>
+                    </div>
+                    <div class="project-tech-mini">
+                        <span>scikit-learn</span>
+                        <span>TensorFlow</span>
+                        <span>XGBoost</span>
+                        <span>CatBoost</span>
+                    </div>
+                </div>
+                <div class="btn-group project-actions">
+                    <a href="https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML" target="_blank" class="btn btn-live"><i class="bx bx-link-external"></i> Model Code</a>
+                    <button type="button" class="btn btn-case-study" data-target="modal-spaceship-titanic"><i class="bx bx-book-open"></i> Case Study</button>
+                    <a href="https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML" target="_blank" class="btn btn-github" title="Source Code"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 4: EpicOutlet -->
+            <div class="project-compact reveal-item" data-project-id="epicoutlet">
+                <div class="project-compact-img-wrap project-gallery" data-gallery="epicoutlet">
+                    <div class="gallery-slides">
+                        <img src="images/E1.webp" width="1600" height="915" alt="EpicOutlet Storefront" class="gallery-img active" data-index="0" loading="lazy" decoding="async">
+                        <img src="images/E3.webp" width="1600" height="851" alt="EpicOutlet Product Catalog" class="gallery-img" data-index="1" loading="lazy" decoding="async">
+                        <img src="images/E4.webp" width="1600" height="848" alt="EpicOutlet Shop-Bot Assistant" class="gallery-img" data-index="2" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-nav-controls mini-controls">
+                        <button type="button" class="gallery-prev" aria-label="Previous image"><i class="bx bx-chevron-left"></i></button>
+                        <div class="gallery-dots">
+                            <span class="gallery-dot active" data-index="0"></span>
+                            <span class="gallery-dot" data-index="1"></span>
+                            <span class="gallery-dot" data-index="2"></span>
+                        </div>
+                        <button type="button" class="gallery-next" aria-label="Next image"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                    <span class="compact-cat-tag"><i class="bx bx-cart"></i> E-Commerce & AI</span>
+                </div>
+                <div class="project-compact-info">
+                    <h3>EpicOutlet</h3>
+                    <p class="project-tagline">Modern online storefront with tool-calling AI Shop-Bot assistant.</p>
+                    <div class="compact-metric-pills">
+                        <span><i class="bx bx-check"></i> Groq LLM Function Tool-Calling</span>
+                        <span><i class="bx bx-server"></i> Tastypie REST API Endpoints</span>
+                        <span><i class="bx bx-user-check"></i> Auth, Cart, & Cloudinary</span>
+                    </div>
+                    <div class="project-tech-mini">
+                        <span>Django 5.2</span>
+                        <span>PostgreSQL</span>
+                        <span>Groq API</span>
+                        <span>Cloudinary</span>
+                    </div>
+                </div>
+                <div class="btn-group project-actions">
+                    <a href="https://epicoutlet.onrender.com/" target="_blank" class="btn btn-live"><i class="bx bx-link-external"></i> Live Demo</a>
+                    <button type="button" class="btn btn-case-study" data-target="modal-epicoutlet"><i class="bx bx-book-open"></i> Case Study</button>
+                    <a href="https://github.com/Hudsonmathew1910/EpicOutlet" target="_blank" class="btn btn-github" title="Source Code"><i class="bx bxl-github"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="contact-form" id="contact-form">
-            <div class="input-grp-1">
-                <div class="input-box">
-                    <input id="name" type="text" placeholder="Name" required>
-                    <input id="gmail" type="email" placeholder="Gmail" required>
-                </div>
-                <div class="input-box">
-                    <!-- <input type="number" placeholder="Phone no"> -->
-                    <input id="subject" type="text" placeholder="Subject" required>
-                </div>
-            </div>
-            <div class="input-grp-2">
-                    <textarea id="msg" placeholder="Your Message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
-    <footer class="footer">
-        <div class="social-icon">
-            <a href="https://github.com/Hudsonmathew1910">
-                <i class="bx bxl-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hudson-mathew-J">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
-            <a href="https://www.instagram.com/j.hudson_mathew?igsh=bm9sYmNjb3IyZmRu">
-                <i class="bx bxl-instagram-alt"></i>
-            </a>
-            <a href="mailto:hudsonmathew2004@gmail.com">
-                <i class="bx bx-envelope"></i>
-            </a>
+    <!-- 2. Skills & Technical Matrix (Redesigned) -->
+    <section class="skills reveal-item" id="skills">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>02</b> Skills</span>
+            <h2 class="heading">Technical <span>Matrix</span></h2>
+            <p class="section-subline">Engineered with production-grade Python, multi-model AI, and robust database architectures.</p>
         </div>
-        <ul class="link">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#project">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            © Hudson Mathew | All Rights Reserved
-        </p>
+
+        <!-- 3 Core Domains of Mastery -->
+        <div class="skills-specializations-grid">
+            <div class="spec-card">
+                <div class="spec-icon-wrap"><i class="bx bx-brain"></i></div>
+                <div class="spec-content">
+                    <span class="spec-tag">Flagship Focus</span>
+                    <h3>AI & LLM Orchestration</h3>
+                    <p>Multi-model fallback chains, pre-LLM NLP intent classification, vector RAG embeddings, and thread-pool concurrency racing.</p>
+                    <div class="spec-tech-list">
+                        <span>Groq API</span>
+                        <span>Gemini 2.5</span>
+                        <span>OpenRouter</span>
+                        <span>Pinecone</span>
+                        <span>RAG Pipelines</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon-wrap"><i class="bx bxl-django"></i></div>
+                <div class="spec-content">
+                    <span class="spec-tag">Core Architecture</span>
+                    <h3>Python & Django Backend</h3>
+                    <p>Scalable web backends, RESTful APIs, database schema modeling, secure auth sessions, and Fernet encryption for credentials.</p>
+                    <div class="spec-tech-list">
+                        <span>Django 5.2</span>
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                        <span>Gunicorn</span>
+                        <span>WhiteNoise</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spec-card">
+                <div class="spec-icon-wrap"><i class="bx bx-line-chart"></i></div>
+                <div class="spec-content">
+                    <span class="spec-tag">Analytical Edge</span>
+                    <h3>Data Analytics & Machine Learning</h3>
+                    <p>Vectorized data manipulation in Pandas, statistical EDA, multi-algorithm weighted ensembles, and sandboxed code execution.</p>
+                    <div class="spec-tech-list">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>scikit-learn</span>
+                        <span>TensorFlow</span>
+                        <span>XGBoost</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categorized Stack Explorer -->
+        <div class="skills-stack-matrix">
+            <div class="stack-category-card">
+                <div class="stack-cat-header">
+                    <div>
+                        <i class="bx bx-code-alt"></i>
+                        <h4>Languages & Frameworks</h4>
+                    </div>
+                    <span class="stack-count">5 Core</span>
+                </div>
+                <div class="stack-badges-wrap">
+                    <div class="stack-badge badge-primary"><i class="bx bxl-python"></i> <span>Python 3.11</span> <span class="badge-level">Primary</span></div>
+                    <div class="stack-badge badge-primary"><i class="bx bxl-django"></i> <span>Django 5.2</span> <span class="badge-level">Primary</span></div>
+                    <div class="stack-badge"><i class="bx bx-data"></i> <span>SQL</span></div>
+                    <div class="stack-badge"><i class="bx bxl-html5"></i> <span>HTML5</span></div>
+                    <div class="stack-badge"><i class="bx bxl-css3"></i> <span>CSS3</span></div>
+                </div>
+            </div>
+
+            <div class="stack-category-card">
+                <div class="stack-cat-header">
+                    <div>
+                        <i class="bx bx-bot"></i>
+                        <h4>AI Systems & LLMs</h4>
+                    </div>
+                    <span class="stack-count">7 Frameworks</span>
+                </div>
+                <div class="stack-badges-wrap">
+                    <div class="stack-badge badge-accent"><i class="bx bx-git-branch"></i> <span>Multi-LLM Dispatcher</span></div>
+                    <div class="stack-badge badge-accent"><i class="bx bx-search-alt"></i> <span>RAG (Vector Search)</span></div>
+                    <div class="stack-badge"><i class="bx bx-slider"></i> <span>Prompt Engineering</span></div>
+                    <div class="stack-badge"><i class="bx bx-target-lock"></i> <span>NLP Intent Routing</span></div>
+                    <div class="stack-badge"><i class="bx bx-chip"></i> <span>Groq API</span></div>
+                    <div class="stack-badge"><i class="bx bx-brain"></i> <span>Google Gemini</span></div>
+                    <div class="stack-badge"><i class="bx bx-cloud"></i> <span>OpenRouter</span></div>
+                </div>
+            </div>
+
+            <div class="stack-category-card">
+                <div class="stack-cat-header">
+                    <div>
+                        <i class="bx bx-bar-chart-alt-2"></i>
+                        <h4>Data Science & ML</h4>
+                    </div>
+                    <span class="stack-count">7 Libraries</span>
+                </div>
+                <div class="stack-badges-wrap">
+                    <div class="stack-badge"><i class="bx bx-table"></i> <span>Pandas</span></div>
+                    <div class="stack-badge"><i class="bx bx-math"></i> <span>NumPy</span></div>
+                    <div class="stack-badge"><i class="bx bx-scatter-chart"></i> <span>Matplotlib & Seaborn</span></div>
+                    <div class="stack-badge"><i class="bx bx-network-chart"></i> <span>scikit-learn</span></div>
+                    <div class="stack-badge"><i class="bx bx-layer"></i> <span>TensorFlow / Keras</span></div>
+                    <div class="stack-badge"><i class="bx bx-trending-up"></i> <span>XGBoost & CatBoost</span></div>
+                    <div class="stack-badge"><i class="bx bx-spreadsheet"></i> <span>Excel</span></div>
+                </div>
+            </div>
+
+            <div class="stack-category-card">
+                <div class="stack-cat-header">
+                    <div>
+                        <i class="bx bx-server"></i>
+                        <h4>Databases & DevOps</h4>
+                    </div>
+                    <span class="stack-count">7 Tools</span>
+                </div>
+                <div class="stack-badges-wrap">
+                    <div class="stack-badge"><i class="bx bxl-postgresql"></i> <span>PostgreSQL</span></div>
+                    <div class="stack-badge"><i class="bx bx-data"></i> <span>Pinecone (Vector DB)</span></div>
+                    <div class="stack-badge"><i class="bx bx-data"></i> <span>MySQL</span></div>
+                    <div class="stack-badge"><i class="bx bx-cloud"></i> <span>Supabase</span></div>
+                    <div class="stack-badge"><i class="bx bxl-git"></i> <span>Git & GitHub</span></div>
+                    <div class="stack-badge"><i class="bx bx-terminal"></i> <span>Gunicorn & WhiteNoise</span></div>
+                    <div class="stack-badge"><i class="bx bx-lock-alt"></i> <span>Fernet Key Encryption</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills & Professional Attributes -->
+        <div class="soft-skills-matrix">
+            <h3 class="soft-skills-heading"><i class="bx bx-award"></i> Professional Working Style</h3>
+            <div class="soft-skills-cols">
+                <div class="soft-col">
+                    <div class="soft-icon-title">
+                        <i class="bx bx-rocket"></i>
+                        <h4>Fast Learner</h4>
+                    </div>
+                    <p>Progressed from a basic Django prototype to building vector RAG, tool-calling agents, and multithreaded fast-mode racing within a single flagship project.</p>
+                </div>
+                <div class="soft-col">
+                    <div class="soft-icon-title">
+                        <i class="bx bx-brain"></i>
+                        <h4>Problem Solver</h4>
+                    </div>
+                    <p>Eliminated slow sequential API fallback bottlenecks by racing multiple models via Python thread pools, slashing user response latency by up to 75%.</p>
+                </div>
+                <div class="soft-col">
+                    <div class="soft-icon-title">
+                        <i class="bx bx-palette"></i>
+                        <h4>Creative Thinker</h4>
+                    </div>
+                    <p>Pairs technical backend logic with aesthetic UI empathy—designing applications that are both robust under the hood and clean to interact with.</p>
+                </div>
+                <div class="soft-col">
+                    <div class="soft-icon-title">
+                        <i class="bx bx-check-shield"></i>
+                        <h4>Ownership Mindset</h4>
+                    </div>
+                    <p>Deploys, monitors, and maintains real production platforms with live users and encrypted credentials instead of stopping at localhost code demos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Experience -->
+    <section class="experience reveal-item" id="experience">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>03</b> Experience</span>
+            <h2 class="heading">Hands-on <span>Experience</span></h2>
+            <p class="section-subline">Real production features, backend logic, and agile requirements.</p>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Full Stack Developer Intern</h3>
+                        <p class="experience-company"><i class="bx bx-buildings"></i> Postulate</p>
+                    </div>
+                    <span class="experience-period"><i class="bx bx-calendar"></i> 2025</span>
+                </div>
+
+                <div class="experience-block">
+                    <h4>About the role</h4>
+                    <p>Worked across the full stack on real application features. The internship showed me how professional software projects run: requirements arrive, features get built, bugs get fixed, and the application has to keep working smoothly in production.</p>
+                </div>
+
+                <div class="experience-block exp-collapsible">
+                    <button type="button" class="exp-collapse-btn">
+                        <h4><i class="bx bx-list-check"></i> What I Did</h4>
+                        <i class="bx bx-chevron-down exp-chevron"></i>
+                    </button>
+                    <div class="exp-collapse-content">
+                        <ul class="custom-dash-list">
+                            <li>Built frontend features and connected them to backend logic.</li>
+                            <li>Implemented backend functionality for the application.</li>
+                            <li>Maintained and improved existing features.</li>
+                            <li>Turned real project requirements into working, tested code.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-block exp-collapsible">
+                    <button type="button" class="exp-collapse-btn">
+                        <h4><i class="bx bx-bulb"></i> What I Learned</h4>
+                        <i class="bx bx-chevron-down exp-chevron"></i>
+                    </button>
+                    <div class="exp-collapse-content">
+                        <ul class="custom-dash-list">
+                            <li>Writing code is only part of the job. Reading existing codebases, communicating clearly, and resolving issues matter just as much.</li>
+                            <li>Features need to work for real users, not just on a local development machine.</li>
+                            <li>Maintenance and testing are as important as building new things from scratch.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-skills">
+                    <span class="skill-tag"><i class="bx bx-code"></i> Web Development</span>
+                    <span class="skill-tag"><i class="bx bx-layer"></i> Frontend & Backend Implementation</span>
+                    <span class="skill-tag"><i class="bx bx-bug"></i> Debugging & Maintenance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. My Journey (Timeline) -->
+    <section class="journey reveal-item" id="journey">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>04</b> Journey</span>
+            <h2 class="heading">From classroom code to <span>live products</span></h2>
+            <p class="section-subline">Hover to auto-scroll or drag through the key milestones of my journey.</p>
+        </div>
+        <div class="timeline-scroll-wrapper">
+            <div class="timeline-scroll-track">
+                <div class="timeline-scroll-line"></div>
+                <div class="timeline-scroll-card">
+                    <span class="timeline-scroll-year"><i class="bx bxs-graduation"></i> 2025</span>
+                    <h3>Graduated with a BCA</h3>
+                    <p class="timeline-institution">Don Bosco College of Arts & Science, Tuticorin</p>
+                    <p>Finished my Bachelor of Computer Applications with a solid base in programming, databases, and web development, plus a habit of building things on my own.</p>
+                </div>
+                <div class="timeline-scroll-card">
+                    <span class="timeline-scroll-year"><i class="bx bx-briefcase"></i> 2025</span>
+                    <h3>Full Stack Intern at Postulate</h3>
+                    <p class="timeline-institution">Postulate</p>
+                    <p>My first taste of real project work. Built frontend and backend features, helped maintain applications, and learned to work from actual client requirements, not tutorials.</p>
+                </div>
+                <div class="timeline-scroll-card">
+                    <span class="timeline-scroll-year"><i class="bx bx-trending-up"></i> 2026</span>
+                    <h3>Pyspider, Python with Data Science</h3>
+                    <p class="timeline-institution">Bengaluru</p>
+                    <p>Joined Pyspider in Bengaluru to go deeper into Python, data science, and AI. Now working with Pandas, NumPy, visualization, and machine learning models that feed directly into my production builds.</p>
+                </div>
+                <div class="timeline-scroll-card">
+                    <span class="timeline-scroll-year"><i class="bx bx-cart"></i> 2026</span>
+                    <h3>EpicOutlet & Spaceship Titanic</h3>
+                    <p class="timeline-institution">Full-Stack & Machine Learning</p>
+                    <p>Engineered EpicOutlet (Django e-commerce with AI tool-calling shopping bot) and a weighted machine learning ensemble for the Spaceship Titanic Kaggle challenge.</p>
+                </div>
+                <div class="timeline-scroll-card">
+                    <span class="timeline-scroll-year"><i class="bx bx-bot"></i> 2026</span>
+                    <h3>Hero's AI goes live</h3>
+                    <p class="timeline-institution">Flagship Multi-Model Platform</p>
+                    <p>Expanded a Django prototype into a live multi-model AI platform featuring Infinsight (RAG data analyst), Zeno (Chrome/Edge extension), and interruptible voice mode.</p>
+                </div>
+                <div class="timeline-scroll-card timeline-scroll-card-future">
+                    <span class="timeline-scroll-year"><i class="bx bx-target-lock"></i> Next</span>
+                    <h3>A team where I can grow</h3>
+                    <p class="timeline-institution">Looking Ahead</p>
+                    <p>Ready to join an engineering team building intelligent, data-driven products, where I can contribute from day one and continually learn from senior builders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Education & Learning Journey (Redesigned) -->
+    <section class="education reveal-item" id="education">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>05</b> Education</span>
+            <h2 class="heading">My Learning <span>Journey</span></h2>
+            <p class="section-subline">Formal computer science foundations united with applied production-level AI specialization.</p>
+        </div>
+
+        <div class="edu-tabs-container">
+            <!-- Sleek Tab Switcher -->
+            <div class="edu-tab-buttons">
+                <button type="button" class="edu-tab-btn active" data-tab="tab-bca">
+                    <i class="bx bxs-graduation"></i>
+                    <div>
+                        <span class="tab-title">Bachelor of Computer Applications</span>
+                        <span class="tab-subtitle">Don Bosco College (2022 – 2025)</span>
+                    </div>
+                </button>
+                <button type="button" class="edu-tab-btn" data-tab="tab-pyspider">
+                    <i class="bx bx-code-block"></i>
+                    <div>
+                        <span class="tab-title">Python, Data Science & AI</span>
+                        <span class="tab-subtitle">Pyspider, Bengaluru (2026)</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="edu-tab-panels">
+                <!-- Panel 1: BCA -->
+                <div class="edu-tab-panel active" id="tab-bca">
+                    <div class="edu-showcase-header">
+                        <div class="edu-header-left">
+                            <span class="edu-cred-badge"><i class="bx bx-award"></i> University Degree</span>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="edu-inst-line"><i class="bx bx-map-pin"></i> Don Bosco College of Arts & Science, Tuticorin</p>
+                        </div>
+                        <div class="edu-header-right">
+                            <span class="edu-status-badge"><i class="bx bx-check-double"></i> Graduated 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- 3 Academic Pillar Cards -->
+                    <div class="edu-pillars-grid">
+                        <div class="edu-pillar-card">
+                            <i class="bx bx-code-alt"></i>
+                            <h4>Programming & DSA</h4>
+                            <p>Data structures, algorithm complexity, object-oriented design, and foundational software engineering principles.</p>
+                        </div>
+                        <div class="edu-pillar-card">
+                            <i class="bx bx-data"></i>
+                            <h4>Relational DBMS & SQL</h4>
+                            <p>Database schema normalization, complex queries, transactions, and robust data integrity models.</p>
+                        </div>
+                        <div class="edu-pillar-card">
+                            <i class="bx bx-network-chart"></i>
+                            <h4>Web & Systems</h4>
+                            <p>Client-server protocols, operating systems, and building functional applications from scratch.</p>
+                        </div>
+                    </div>
+
+                    <!-- Real World Application Ribbon -->
+                    <div class="edu-applied-ribbon">
+                        <div class="ribbon-icon"><i class="bx bx-rocket"></i></div>
+                        <div class="ribbon-text">
+                            <strong>The Real-World Takeaway:</strong>
+                            <p>College is where I started learning by building. Instead of only studying theory for exams, I turned concepts into working applications—a habit that directly inspired the architectural creation of Hero's AI.</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-tags-footer">
+                        <span class="edu-tag">Algorithms</span>
+                        <span class="edu-tag">Data Structures</span>
+                        <span class="edu-tag">DBMS & SQL</span>
+                        <span class="edu-tag">Web Architecture</span>
+                        <span class="edu-tag">OOP & Systems</span>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Pyspider -->
+                <div class="edu-tab-panel" id="tab-pyspider">
+                    <div class="edu-showcase-header">
+                        <div class="edu-header-left">
+                            <span class="edu-cred-badge"><i class="bx bx-chip"></i> Advanced Industrial Specialization</span>
+                            <h3>Python, Data Science & Machine Learning</h3>
+                            <p class="edu-inst-line"><i class="bx bx-map-pin"></i> Pyspider, Bengaluru</p>
+                        </div>
+                        <div class="edu-header-right">
+                            <span class="edu-status-badge"><i class="bx bx-time-five"></i> 2026 Intensive Program</span>
+                        </div>
+                    </div>
+
+                    <!-- 3 Analytical Pillar Cards -->
+                    <div class="edu-pillars-grid">
+                        <div class="edu-pillar-card">
+                            <i class="bx bxl-python"></i>
+                            <h4>Python Architecture</h4>
+                            <p>Advanced OOP, multithreaded concurrency with ThreadPoolExecutor, decorators, and production patterns.</p>
+                        </div>
+                        <div class="edu-pillar-card">
+                            <i class="bx bx-bar-chart-alt-2"></i>
+                            <h4>Data Analytics & Vectorization</h4>
+                            <p>Exploratory data analysis (EDA), cleaning messy data, and high-performance processing in Pandas & NumPy.</p>
+                        </div>
+                        <div class="edu-pillar-card">
+                            <i class="bx bx-brain"></i>
+                            <h4>Machine Learning Pipelines</h4>
+                            <p>Feature engineering, model tuning, cross-validation, and weighted ensemble blending across Scikit-learn, TensorFlow, and XGBoost.</p>
+                        </div>
+                    </div>
+
+                    <!-- Real World Application Ribbon -->
+                    <div class="edu-applied-ribbon">
+                        <div class="ribbon-icon"><i class="bx bx-check-shield"></i></div>
+                        <div class="ribbon-text">
+                            <strong>Production Output:</strong>
+                            <p>Immediately translated these competencies into production: engineered the 8-algorithm weighted ensemble for Kaggle's Spaceship Titanic, and built Infinsight—a RAG data analyst that converts natural language into executed Pandas code.</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-tags-footer">
+                        <span class="edu-tag">Python Concurrency</span>
+                        <span class="edu-tag">Pandas & NumPy</span>
+                        <span class="edu-tag">Feature Engineering</span>
+                        <span class="edu-tag">scikit-learn</span>
+                        <span class="edu-tag">TensorFlow & XGBoost</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Services -->
+    <section class="services reveal-item" id="services">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>06</b> Services</span>
+            <h2 class="heading">What I can build <span>for you</span></h2>
+            <p class="section-subline">From idea to a deployed product, one developer who handles the AI, the backend and the interface.</p>
+        </div>
+
+        <div class="services-container">
+            <!-- 1. AI Chatbot & LLM App Development -->
+            <div class="service-card service-stagger-up" data-service-collapsed>
+                <div class="service-header">
+                    <span class="service-num">01</span>
+                    <h3><i class="bx bx-bot"></i> AI Chatbot & LLM App Development</h3>
+                    <p class="service-tagline">Assistants that actually use your data.</p>
+                </div>
+                <div class="service-body">
+                    <h4>What you get</h4>
+                    <ul class="custom-dash-list">
+                        <li>A chatbot or AI assistant for your website, app or team.</li>
+                        <li>Answers based on your own documents (RAG), not guesses.</li>
+                        <li>Multi-model setup with automatic fallback, so one failing model doesn’t break the app.</li>
+                        <li>Optional voice mode, web search and file upload.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <p><strong>Example from my work:</strong> Hero’s AI (multi-LLM platform) and Shop-Bot (a store chatbot searching real products via tool-calling).</p>
+                        <p><strong>Tech:</strong> Python, Django, Gemini, OpenRouter, Groq, Pinecone, prompt engineering.</p>
+                        <p class="service-best-for"><strong>Best for:</strong> Startups, small businesses and teams who want an AI assistant inside their product.</p>
+                    </div>
+                </div>
+                <button type="button" class="service-toggle">Show details</button>
+            </div>
+
+            <!-- 2. Python & Django Backend Development -->
+            <div class="service-card" data-service-collapsed>
+                <div class="service-header">
+                    <span class="service-num">02</span>
+                    <h3><i class="bx bx-server"></i> Python & Django Backend Development</h3>
+                    <p class="service-tagline">Solid backends that keep your app running.</p>
+                </div>
+                <div class="service-body">
+                    <h4>What you get</h4>
+                    <ul class="custom-dash-list">
+                        <li>REST APIs and database-driven features.</li>
+                        <li>Secure login (email/password or Google OAuth).</li>
+                        <li>Clean database design in PostgreSQL or MySQL.</li>
+                        <li>Deployment with Gunicorn and WhiteNoise on platforms like Render or AlwaysData.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <p><strong>Example from my work:</strong> EpicOutlet, a full e-commerce backend with cart, favourites, admin panel and REST API.</p>
+                        <p><strong>Tech:</strong> Django, PostgreSQL, MySQL, Supabase, Gunicorn, WhiteNoise.</p>
+                        <p class="service-best-for"><strong>Best for:</strong> Web apps, e-commerce sites and MVPs.</p>
+                    </div>
+                </div>
+                <button type="button" class="service-toggle">Show details</button>
+            </div>
+
+            <!-- 3. Data Analysis & Machine Learning -->
+            <div class="service-card service-stagger-up" data-service-collapsed>
+                <div class="service-header">
+                    <span class="service-num">03</span>
+                    <h3><i class="bx bx-line-chart"></i> Data Analysis & Machine Learning</h3>
+                    <p class="service-tagline">Turn messy data into clear answers.</p>
+                </div>
+                <div class="service-body">
+                    <h4>What you get</h4>
+                    <ul class="custom-dash-list">
+                        <li>Data cleaning and exploratory analysis (EDA).</li>
+                        <li>Charts and insights using Pandas, Matplotlib and Seaborn.</li>
+                        <li>Data reporting in Excel.</li>
+                        <li>Machine learning models for prediction, with clear evaluation.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <p><strong>Example from my work:</strong> Infinsight (plain-English data queries over CSV/Excel) and Spaceship Titanic (weighted ML ensemble).</p>
+                        <p><strong>Tech:</strong> Pandas, NumPy, scikit-learn, TensorFlow/Keras, XGBoost, CatBoost, Excel.</p>
+                        <p class="service-best-for"><strong>Best for:</strong> Businesses with spreadsheets and sales data who need insights.</p>
+                    </div>
+                </div>
+                <button type="button" class="service-toggle">Show details</button>
+            </div>
+
+            <!-- 4. Frontend & UI Design -->
+            <div class="service-card" data-service-collapsed>
+                <div class="service-header">
+                    <span class="service-num">04</span>
+                    <h3><i class="bx bx-layout"></i> Frontend & UI Design</h3>
+                    <p class="service-tagline">Clean, responsive interfaces people enjoy using.</p>
+                </div>
+                <div class="service-body">
+                    <h4>What you get</h4>
+                    <ul class="custom-dash-list">
+                        <li>Responsive pages that work seamlessly on phones and desktops.</li>
+                        <li>UI concepts, layouts and consistent modular components.</li>
+                        <li>Graphics, illustrations and coherent branding visuals.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <p><strong>Example from my work:</strong> The clean modern UI in Hero’s AI and the Digenie branding and campaign assessment.</p>
+                        <p><strong>Tech:</strong> HTML, CSS, Bootstrap, graphic design tools.</p>
+                        <p class="service-best-for"><strong>Best for:</strong> Portfolios, landing pages and product interfaces.</p>
+                    </div>
+                </div>
+                <button type="button" class="service-toggle">Show details</button>
+            </div>
+        </div>
+
+        <!-- How I Work Workflow -->
+        <div class="how-i-work-wrap">
+            <h3 class="how-title"><i class="bx bx-git-commit"></i> How I work</h3>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <span class="step-num">1</span>
+                    <h4><i class="bx bx-bulb"></i> Understand</h4>
+                    <p>We talk through your idea, constraints, and target outcomes.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-num">2</span>
+                    <h4><i class="bx bx-map-alt"></i> Plan</h4>
+                    <p>I outline core features, architectural tech stack, and clear timeline.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-num">3</span>
+                    <h4><i class="bx bx-code"></i> Build</h4>
+                    <p>I share functional progress early, so you can test and give feedback.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-num">4</span>
+                    <h4><i class="bx bx-rocket"></i> Deploy</h4>
+                    <p>I launch it live, configure environments, and hand over the codebase.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-num">5</span>
+                    <h4><i class="bx bx-sync"></i> Improve</h4>
+                    <p>I resolve edge cases and refine features based on real usage.</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#contact" class="btn btn-primary"><i class="bx bx-paper-plane"></i> Start a Project</a>
+                <a href="mailto:hudsonmathew2004@gmail.com" class="btn btn-secondary"><i class="bx bx-envelope"></i> Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Open to Opportunities -->
+    <section class="open-to-work reveal-item" id="open-to-work">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>07</b> Availability</span>
+            <h2 class="heading">Open to <span>Opportunities</span></h2>
+            <p class="section-subline">Fresher, project-ready and eager to contribute from day one.</p>
+        </div>
+        <div class="open-work-container">
+            <div class="open-work-strip">
+                <div class="strip-col">
+                    <h3><i class="bx bx-briefcase-alt-2"></i> Roles I'm Looking For</h3>
+                    <ul class="custom-dash-list">
+                        <li>Python Developer</li>
+                        <li>AI/ML Developer</li>
+                        <li>Data Analyst or Junior Data Scientist</li>
+                        <li>Backend Developer (Django)</li>
+                        <li>Full Stack Developer (Python)</li>
+                        <li>Software Engineer</li>
+                    </ul>
+                </div>
+                <div class="strip-divider"></div>
+                <div class="strip-col">
+                    <h3><i class="bx bx-slider-alt"></i> Preferences</h3>
+                    <div class="pref-item">
+                        <span class="pref-label">Level:</span>
+                        <span class="pref-val">Fresher, entry level, trainee or internship</span>
+                    </div>
+                    <div class="pref-item">
+                        <span class="pref-label">Work Style:</span>
+                        <span class="pref-val">Hybrid preferred, open to remote or onsite</span>
+                    </div>
+                    <div class="pref-item">
+                        <span class="pref-label">Locations:</span>
+                        <span class="pref-val">Bengaluru, Chennai, Coimbatore</span>
+                    </div>
+                    <div class="pref-item">
+                        <span class="pref-label">Team Type:</span>
+                        <span class="pref-val">AI products, SaaS, data and analytics</span>
+                    </div>
+                </div>
+                <div class="strip-divider"></div>
+                <div class="strip-col">
+                    <h3><i class="bx bx-check-shield"></i> What You Get With Me</h3>
+                    <ul class="custom-dash-list">
+                        <li>A developer who has already deployed real AI products to production.</li>
+                        <li>Hands-on RAG, LLM orchestration, and vector search experience.</li>
+                        <li>A quick learner who can also handle UI aesthetics and visual design.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="open-work-cta">
+                <a href="mailto:hudsonmathew2004@gmail.com" class="btn btn-primary"><i class="bx bx-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/hudson-mathew-J" target="_blank" class="btn btn-secondary"><i class="bx bxl-linkedin"></i> View My LinkedIn</a>
+                <a href="https://docs.google.com/presentation/d/1hwMHvDCXsXtMpL-J0wYBHSVh8M6d1r-6rE2twns5sBE/edit?usp=sharing" target="_blank" class="btn btn-case-study"><i class="bx bx-file"></i> View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Beyond Code -->
+    <section class="beyond-code reveal-item" id="beyond-code">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>08</b> Beyond Code</span>
+            <h2 class="heading">Beyond <span>Code</span></h2>
+            <p class="section-subline">What I do when I'm not at my keyboard writing Python.</p>
+        </div>
+        <div class="beyond-flow">
+            <div class="beyond-block">
+                <div class="beyond-block-header">
+                    <i class="bx bx-palette"></i>
+                    <h3>Design & Creativity</h3>
+                </div>
+                <p>I draw, design and edit. Graphic design, digital illustration, photo editing and video editing came before coding for me. They taught me composition, visual hierarchy and user empathy, which directly shape how I design clean, intentional interfaces with natural product flow.</p>
+            </div>
+            <div class="beyond-divider"></div>
+            <div class="beyond-block">
+                <div class="beyond-block-header">
+                    <i class="bx bx-bulb"></i>
+                    <h3>Curiosity</h3>
+                </div>
+                <p>I love exploring emerging tech, deconstructing tools to see how they work under the hood, and experimenting with new ideas. Whether reverse-engineering complex APIs or building prototypes from scratch, hands-on exploration is how I continually expand what I can create.</p>
+            </div>
+            <div class="beyond-quote">
+                <blockquote>"Code is how I build. Design and stories are why I build."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="faq reveal-item" id="faq">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>09</b> FAQ</span>
+            <h2 class="heading">Frequently Asked <span>Questions</span></h2>
+            <p class="section-subline">Quick answers about my background, projects, and availability.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="faq-filters">
+            <button type="button" class="faq-filter-btn active" data-filter="all"><i class="bx bx-grid-alt"></i> All Questions</button>
+            <button type="button" class="faq-filter-btn" data-filter="ai"><i class="bx bx-brain"></i> AI & Projects</button>
+            <button type="button" class="faq-filter-btn" data-filter="tech"><i class="bx bx-code-alt"></i> Tech Stack</button>
+            <button type="button" class="faq-filter-btn" data-filter="career"><i class="bx bx-briefcase-alt-2"></i> Career & Hiring</button>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item" data-category="career">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> What do you specialise in?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Python development with a focus on AI integrations, backend systems and data work. I also build frontends, so I can deliver a full product from database to user interface.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="career">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> Are you a fresher? Do you have real experience?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I’m a 2025 graduate. I interned as a Full Stack developer at Postulate, and I’ve built and deployed live production projects such as Hero’s AI and EpicOutlet.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="ai">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> What is Hero’s AI in simple words?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>It’s an AI assistant platform that chooses the best AI model for each request, handles voice and files, and can analyse your spreadsheets through Infinsight without writing code.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="ai">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> Can you build a chatbot for my business?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. I can build chatbots that use your own documents (RAG) and connect directly to your live product catalog, like the Shop-Bot in EpicOutlet.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="tech">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> What technologies do you use?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Python, Django, SQL, HTML, CSS, Pandas, scikit-learn, TensorFlow, PostgreSQL, Pinecone, Groq, and Gemini.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="career">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> Do you do design work too?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. I do UI concepts, graphic design, illustration and photo/video editing, which helps me make functional apps look and feel polished.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="career">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> Are you available for internships or full-time roles?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I’m open to both, with a preference for hybrid roles in Bengaluru, Chennai or Coimbatore.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="career">
+                <button class="faq-question" type="button">
+                    <span><i class="bx bx-help-circle faq-q-icon"></i> How can I contact you?</span>
+                    <i class="bx bx-chevron-down faq-chevron"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Use the contact form below, email me at hudsonmathew2004@gmail.com, or message me directly on LinkedIn. I reply within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive AI Question Prompt Card -->
+        <div class="faq-huddy-prompt">
+            <div class="huddy-prompt-text">
+                <i class="bx bx-bot"></i>
+                <div>
+                    <h4>Have a specific technical question?</h4>
+                    <p>Ask Huddy, my AI assistant. He knows my architecture, models, fallbacks, and stack in full detail.</p>
+                </div>
+            </div>
+            <button type="button" id="faq-ask-ai-btn" class="btn btn-secondary"><i class="bx bx-chat"></i> Chat with Huddy</button>
+        </div>
+    </section>
+
+    <!-- 10. Contact Hub (Modern 2-Column Showcase) -->
+    <section class="contact reveal-item" id="contact">
+        <div class="section-title-wrap">
+            <span class="section-eyebrow"><b>10</b> Contact</span>
+            <h2 class="heading">Get In <span>Touch</span></h2>
+            <p class="section-subline">Have an open role, an AI project idea, or want to discuss software engineering? Let's talk.</p>
+        </div>
+        
+        <div class="contact-hub-container">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+                <div class="contact-status-card">
+                    <span class="live-dot-pulse"></span>
+                    <div>
+                        <h4>Actively Interviewing & Open to Work</h4>
+                        <p>Fresher, project-ready Python & AI developer. Seeking full-time or internship opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="contact-direct-cards">
+                    <div class="direct-card" id="email-copy-card" title="Click to copy email">
+                        <div class="direct-card-icon"><i class="bx bx-envelope"></i></div>
+                        <div class="direct-card-info">
+                            <span class="card-subtitle">Email Me</span>
+                            <span class="card-value">hudsonmathew2004@gmail.com</span>
+                        </div>
+                        <button type="button" class="copy-btn" id="copy-email-btn" title="Copy email address">
+                            <i class="bx bx-copy"></i>
+                        </button>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/hudson-mathew-J" target="_blank" class="direct-card">
+                        <div class="direct-card-icon"><i class="bx bxl-linkedin"></i></div>
+                        <div class="direct-card-info">
+                            <span class="card-subtitle">LinkedIn Profile</span>
+                            <span class="card-value">in/hudson-mathew-J</span>
+                        </div>
+                        <i class="bx bx-link-external card-arrow"></i>
+                    </a>
+
+                    <a href="https://github.com/Hudsonmathew1910" target="_blank" class="direct-card">
+                        <div class="direct-card-icon"><i class="bx bxl-github"></i></div>
+                        <div class="direct-card-info">
+                            <span class="card-subtitle">GitHub Repositories</span>
+                            <span class="card-value">Hudsonmathew1910</span>
+                        </div>
+                        <i class="bx bx-link-external card-arrow"></i>
+                    </a>
+                </div>
+
+                <div class="contact-perks-list">
+                    <div class="perk-item"><i class="bx bx-map-pin"></i> <span>Bengaluru, India (Open to Hybrid / Remote)</span></div>
+                    <div class="perk-item"><i class="bx bx-time-five"></i> <span>Guaranteed reply within 24 hours</span></div>
+                </div>
+
+                <a href="https://docs.google.com/presentation/d/1hwMHvDCXsXtMpL-J0wYBHSVh8M6d1r-6rE2twns5sBE/edit?usp=sharing" target="_blank" class="btn btn-case-study resume-download-cta">
+                    <i class="bx bx-file"></i> View Official Resume
+                </a>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-panel">
+                <form id="contact-form" class="modern-contact-form">
+                    <div class="form-topics-wrap">
+                        <label>What would you like to discuss?</label>
+                        <div class="topic-chips">
+                            <button type="button" class="topic-chip active" data-subject="Hiring / Full-Time Role"><i class="bx bx-briefcase-alt-2"></i> Hiring / Full-Time</button>
+                            <button type="button" class="topic-chip" data-subject="Internship Opportunity"><i class="bx bxs-graduation"></i> Internship</button>
+                            <button type="button" class="topic-chip" data-subject="AI / Full-Stack Project"><i class="bx bx-bot"></i> AI Project</button>
+                            <button type="button" class="topic-chip" data-subject="General Inquiry"><i class="bx bx-chat"></i> Quick Hello</button>
+                        </div>
+                    </div>
+
+                    <div class="form-input-grid">
+                        <div class="input-field-group">
+                            <label for="name">Your Name</label>
+                            <div class="input-field-box">
+                                <i class="bx bx-user input-icon"></i>
+                                <input id="name" type="text" placeholder="e.g. Alex Carter" required>
+                            </div>
+                        </div>
+
+                        <div class="input-field-group">
+                            <label for="gmail">Your Email</label>
+                            <div class="input-field-box">
+                                <i class="bx bx-envelope input-icon"></i>
+                                <input id="gmail" type="email" placeholder="e.g. alex@company.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-field-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-field-box">
+                            <i class="bx bx-tag input-icon"></i>
+                            <input id="subject" type="text" value="Hiring / Full-Time Role" required>
+                        </div>
+                    </div>
+
+                    <div class="input-field-group">
+                        <label for="msg">Message</label>
+                        <div class="input-field-box textarea-box">
+                            <i class="bx bx-message-square-dots input-icon"></i>
+                            <textarea id="msg" placeholder="Tell me about the role, project, or technical question..." rows="5" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Spam trap: hidden from people, filled in by bots -->
+                    <div class="form-honeypot" aria-hidden="true">
+                        <label for="website">Website</label>
+                        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="bx bx-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Hudson <span>Mathew</span></a>
+                    <p class="footer-bio">
+                        Python &amp; AI/ML Developer crafting high-reliability web architectures, vector RAG systems, and production LLM orchestrations.
+                    </p>
+                    <div class="footer-status-badge">
+                        <span class="live-dot-pulse"></span>
+                        <span>Open for Full-Time Roles &amp; Engineering Teams</span>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <span class="footer-col-title">Navigation</span>
+                    <ul class="footer-nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#project">Featured Projects</a></li>
+                        <li><a href="#skills">Technical Matrix</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <span class="footer-col-title">Deep Dive</span>
+                    <ul class="footer-nav-list">
+                        <li><a href="#journey">My Journey</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#services">What I Offer</a></li>
+                        <li><a href="#open-to-work">Opportunities</a></li>
+                        <li><a href="#beyond-code">Beyond Code</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-connect-col">
+                    <span class="footer-col-title">Get in Touch</span>
+                    <div class="footer-contact-links">
+                        <a href="mailto:hudsonmathew2004@gmail.com" class="footer-contact-item">
+                            <i class="bx bx-envelope"></i>
+                            <span>hudsonmathew2004@gmail.com</span>
+                        </a>
+                        <div class="footer-contact-item">
+                            <i class="bx bx-map-pin"></i>
+                            <span>Bengaluru, India (Hybrid / Remote)</span>
+                        </div>
+                    </div>
+                    <div class="footer-action-btns">
+                        <a href="https://docs.google.com/presentation/d/1hwMHvDCXsXtMpL-J0wYBHSVh8M6d1r-6rE2twns5sBE/edit?usp=sharing" target="_blank" class="btn btn-footer-resume">
+                            <i class="bx bx-file"></i> View Resume
+                        </a>
+                        <a href="#contact" class="btn btn-footer-contact">
+                            <i class="bx bx-send"></i> Let's Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2026 Hudson Mathew &bull; Handcrafted with clean code, purposeful design, and zero fluff.
+                </p>
+                <div class="footer-social-strip">
+                    <a href="https://github.com/Hudsonmathew1910" target="_blank" title="GitHub" aria-label="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hudson-mathew-J" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/j.hudson_mathew?igsh=bm9sYmNjb3IyZmRu" target="_blank" title="Instagram" aria-label="Instagram">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="mailto:hudsonmathew2004@gmail.com" title="Email" aria-label="Email">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                    <a href="#home" class="footer-back-top" title="Back to top" aria-label="Back to top">
+                        <i class="bx bx-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- AI Portfolio Chat Modal -->
+    <div id="ai-chat-modal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar" id="huddy-robot">
+                        <div class="huddy-blob">
+                            <div class="huddy-cap">
+                                <div class="cap-dome"></div>
+                                <div class="cap-visor"></div>
+                            </div>
+                            <div class="blob-body">
+                                <div class="blob-eye blob-eye-left"></div>
+                                <div class="blob-eye blob-eye-right"></div>
+                                <div class="blob-mouth"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Huddy</h3>
+                        <span class="chat-status" id="huddy-status-text"><span class="status-dot"></span> Online</span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button id="voice-toggle-btn" class="chat-header-icon-btn" title="Toggle AI voice response" aria-label="Toggle voice response">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                    <button id="close-chat-btn" class="chat-close-btn" aria-label="Close chat">&times;</button>
+                </div>
+            </div>
+            
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <p>Hey there! I'm <strong>Huddy</strong>, Hudson's personal AI assistant. Ask me anything about Hudson's projects, skills, or experience!</p>
+                </div>
+            </div>
+
+            <form id="chat-form" class="chat-input-area">
+                <button type="button" id="chat-mic-btn" class="chat-mic-btn" title="Speak to Hudson's AI" aria-label="Voice input">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                <input type="text" id="chat-input" placeholder="Ask a question about Hudson..." autocomplete="off">
+                <button type="submit" id="chat-send-btn" class="chat-send-btn" title="Send message" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Project Case Study Modals -->
+    <div id="case-study-overlay" class="case-study-overlay">
+        <!-- Hero's AI Case Study -->
+        <div id="modal-heros-ai" class="case-study-modal">
+            <div class="case-study-header">
+                <div>
+                    <span class="case-study-badge">Flagship AI Assistant Platform</span>
+                    <h2>Hero's AI</h2>
+                    <p class="case-study-tagline">One AI assistant that picks the right brain for every question.</p>
+                </div>
+                <button class="case-study-close" aria-label="Close Case Study">&times;</button>
+            </div>
+            <div class="case-study-body">
+                <div class="case-study-section">
+                    <h4><i class="bx bx-compass"></i> Overview</h4>
+                    <p>Hero's AI is a live, production-grade AI assistant platform built with Django. Users can type or speak requests, and the system intelligently detects the context and intent, routing each query to the best-suited model and handler with zero dead-ends.</p>
+                </div>
+
+                <div class="case-study-section case-study-gallery-section">
+                    <h4><i class="bx bx-images"></i> Production Interface & Architecture Previews</h4>
+                    <div class="case-study-gallery-grid">
+                        <div class="cs-gallery-item">
+                            <img src="images/H1.webp" width="1600" height="946" alt="Hero's AI Dashboard" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Primary Assistant Workspace</span>
+                        </div>
+                        <div class="cs-gallery-item">
+                            <img src="images/H2.webp" width="1465" height="873" alt="Hero's AI Model Dispatcher" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Multi-Model Routing View</span>
+                        </div>
+                        <div class="cs-gallery-item">
+                            <img src="images/H3.webp" width="1600" height="740" alt="Hero's AI Integrated Analytics" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Integrated Tool Execution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-error-circle"></i> The Problem</h4>
+                    <p>Most AI chatbots rely on a single large language model. If that API times out, suffers an outage, or hits rate limits, the entire application breaks. Furthermore, treating every user request identically (whether it's code generation, math, a live web search, or file inspection) leads to bloated costs and suboptimal answers.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-cog"></i> What I Built & Architecture</h4>
+                    <ul class="case-study-list">
+                        <li><strong>Baymax Dispatcher:</strong> An orchestration engine managing automated fallback across Gemini &rarr; OpenRouter &rarr; Groq, ensuring high availability.</li>
+                        <li><strong>NLP Intent Router:</strong> Classifies user queries across 8 distinct intent domains (coding, web search, file analysis, creative, math, etc.) before making LLM calls to optimize token budgets.</li>
+                        <li><strong>Fast Mode (Concurrent Racing):</strong> Leverages Python's <code>ThreadPoolExecutor</code> to race two models concurrently, instantly returning whichever yields the first token for 50–75% lower latency.</li>
+                        <li><strong>Interruptible Voice Mode:</strong> Live speech synthesis with automatic pause/interruption as soon as the user speaks.</li>
+                        <li><strong>Zeno Browser Extension:</strong> Manifest V3 Chrome/Edge extension providing right-click "Ask Zeno" context sync to the user's primary chat history.</li>
+                        <li><strong>Multimodal Tools:</strong> DuckDuckGo & Wikipedia search synthesis, OCR document extraction via pytesseract, and Google OAuth / email auth.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-shield-quarter"></i> Security & Reliability</h4>
+                    <p>User API keys are encrypted at rest using <strong>Fernet symmetric encryption</strong> and never exposed to the client. The system implements strict CSRF protection, secure HTTP-only sessions, rate limiting, and request payload validation.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-code-alt"></i> Tech Stack</h4>
+                    <div class="case-study-tags">
+                        <span>Django 5.2</span>
+                        <span>Python 3.11</span>
+                        <span>PostgreSQL (Neon)</span>
+                        <span>Pinecone</span>
+                        <span>Google Gemini</span>
+                        <span>OpenRouter</span>
+                        <span>Groq</span>
+                        <span>Gunicorn</span>
+                        <span>WhiteNoise</span>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-bulb"></i> What I Learned</h4>
+                    <p>Designed fault-tolerant multi-model fallback topologies so no individual API downtime can crash user sessions; demonstrated why pre-LLM intent classification cuts inference costs while enhancing precision; and mastered production deployment, session management, and credential encryption.</p>
+                </div>
+            </div>
+            <div class="case-study-footer">
+                <a href="https://hero-s-ai.alwaysdata.net/" target="_blank" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                <a href="https://github.com/Hudsonmathew1910/Hero-s-AI" target="_blank" class="btn btn-outline"><i class="bx bxl-github"></i> View GitHub</a>
+                <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing" target="_blank" class="btn btn-outline"><i class="bx bx-file"></i> Documentation</a>
+            </div>
+        </div>
+
+        <!-- Infinsight Case Study -->
+        <div id="modal-infinsight" class="case-study-modal">
+            <div class="case-study-header">
+                <div>
+                    <span class="case-study-badge">Zero-Code RAG & Data Analytics</span>
+                    <h2>Infinsight</h2>
+                    <p class="case-study-tagline">Upload your data. Ask questions in plain English.</p>
+                </div>
+                <button class="case-study-close" aria-label="Close Case Study">&times;</button>
+            </div>
+            <div class="case-study-body">
+                <div class="case-study-section">
+                    <h4><i class="bx bx-compass"></i> Overview</h4>
+                    <p>Infinsight is the autonomous data analyst engine integrated into Hero's AI. It empowers non-technical users to query complex spreadsheets, CSVs, and PDF files using plain conversational language without writing SQL or Python.</p>
+                </div>
+
+                <div class="case-study-section case-study-gallery-section">
+                    <h4><i class="bx bx-images"></i> Pipeline & Analytical Views</h4>
+                    <div class="case-study-gallery-grid two-col">
+                        <div class="cs-gallery-item">
+                            <img src="images/I1.webp" width="1600" height="723" alt="Infinsight Query Interface" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Natural Language Q&amp;A Interface</span>
+                        </div>
+                        <div class="cs-gallery-item">
+                            <img src="images/I2.webp" width="1600" height="918" alt="Infinsight Synthesized Visualizations" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Sandboxed Pandas Analytics &amp; Plots</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-error-circle"></i> The Problem</h4>
+                    <p>Valuable business insights remain trapped inside raw tables and lengthy PDFs. Most team members lack the scripting skills to compute aggregations, correlations, or cohort breakdowns, forcing them to guess or wait on technical analysts.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-cog"></i> How It Works (Pipeline)</h4>
+                    <ol class="case-study-list-numbered">
+                        <li><strong>Document Ingestion:</strong> Files (CSV, Excel, PDF) are parsed and segmented into semantic chunks (row-level summaries for tables, page blocks for documents).</li>
+                        <li><strong>Vector Embeddings:</strong> Chunk vectors are computed using <code>gemini-embedding-001</code> and indexed into Pinecone vector databases under dedicated user namespaces.</li>
+                        <li><strong>Semantic Search:</strong> When a user asks a question, top-k relevant context chunks and schema metadata are retrieved.</li>
+                        <li><strong>Sandboxed Code Execution:</strong> For quantitative queries, dynamic Pandas code is synthesized and executed in an isolated, secure <code>asteval</code> sandbox to generate analyst-grade figures, trends, and summaries.</li>
+                    </ol>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-chart"></i> Supported Analytics</h4>
+                    <ul class="case-study-list">
+                        <li><strong>RFM Analysis:</strong> Recency, Frequency, and Monetary customer segmentation.</li>
+                        <li><strong>Time-Series Trends:</strong> Aggregated rolling averages, seasonality, and period-over-period comparisons.</li>
+                        <li><strong>Forecasting:</strong> Linear regression trends and forward-looking projections.</li>
+                        <li><strong>Unified Q&amp;A:</strong> Natural language questions answered across tabular sheets and unformatted PDF text.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-code-alt"></i> Tech Stack</h4>
+                    <div class="case-study-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Pinecone</span>
+                        <span>Gemini Embeddings</span>
+                        <span>asteval Sandbox</span>
+                        <span>Django</span>
+                        <span>Vector Search</span>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-bulb"></i> What I Learned</h4>
+                    <p>Deepened understanding of production RAG workflows (chunking strategies, similarity scoring, and context injection); learned the security imperative of executing generated code inside AST sandboxes rather than raw <code>eval()</code>; and turned technical AI pipelines into approachable features for non-technical users.</p>
+                </div>
+            </div>
+            <div class="case-study-footer">
+                <a href="https://hero-s-ai.alwaysdata.net/infinsight/" target="_blank" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                <a href="https://github.com/Hudsonmathew1910/Hero-s-AI" target="_blank" class="btn btn-outline"><i class="bx bxl-github"></i> View GitHub</a>
+                <a href="https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing" target="_blank" class="btn btn-outline"><i class="bx bx-file"></i> Documentation</a>
+            </div>
+        </div>
+
+        <!-- Spaceship Titanic Case Study -->
+        <div id="modal-spaceship-titanic" class="case-study-modal">
+            <div class="case-study-header">
+                <div>
+                    <span class="case-study-badge">Kaggle Machine Learning</span>
+                    <h2>Spaceship Titanic</h2>
+                    <p class="case-study-tagline">A machine learning pipeline combining multiple models for one stronger prediction.</p>
+                </div>
+                <button class="case-study-close" aria-label="Close Case Study">&times;</button>
+            </div>
+            <div class="case-study-body">
+                <div class="case-study-section">
+                    <h4><i class="bx bx-compass"></i> Overview</h4>
+                    <p>A competitive Kaggle binary classification project predicting whether passengers were transported to an alternate dimension following a spacetime collision. It emphasizes meticulous exploratory data analysis, domain feature engineering, and a weighted ensemble.</p>
+                </div>
+
+                <div class="case-study-section case-study-gallery-section">
+                    <h4><i class="bx bx-images"></i> Modeling & Ensemble Architecture</h4>
+                    <div class="case-study-gallery-grid single-col">
+                        <div class="cs-gallery-item">
+                            <img src="images/S1.webp" width="1600" height="796" alt="Spaceship Titanic ML Architecture" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Exploratory Analysis, Decomposition &amp; Weighted Blending Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-wrench"></i> End-to-End ML Workflow</h4>
+                    <ul class="case-study-list">
+                        <li><strong>Exploratory Data Analysis:</strong> Inspected feature correlations, class balance, and missing value distributions across amenities and demographic data.</li>
+                        <li><strong>Targeted Data Cleaning:</strong> Handled missing entries via correlation-driven imputation, medians, or strategic drops per column.</li>
+                        <li><strong>Feature Engineering:</strong> Decomposed the compound <code>Cabin</code> feature into <code>Deck</code>, <code>Number</code>, and <code>Side</code>, unlocking rich predictive signals.</li>
+                        <li><strong>Encoding &amp; Normalization:</strong> Applied One-Hot Encoding for categorical features and <code>StandardScaler</code> normalization for numerical expenditure figures.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-network-chart"></i> Why a Weighted Ensemble?</h4>
+                    <p>Individual algorithms make different prediction errors. Rather than relying on a single classifier, predictions from 8 diverse architectures (Logistic Regression, Random Forest, XGBoost, CatBoost, AdaBoost, KNN, Decision Tree, and a 3-layer Deep Neural Network) were combined via tuned ensemble weights to stabilize variance and maximize generalization accuracy.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-code-alt"></i> Tech Stack</h4>
+                    <div class="case-study-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>scikit-learn</span>
+                        <span>TensorFlow / Keras</span>
+                        <span>XGBoost</span>
+                        <span>CatBoost</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-bulb"></i> What I Learned</h4>
+                    <p>Careful feature engineering often yields higher gains than mere model tuning; gained practical experience observing how diverse tree algorithms versus neural networks respond to tabular distributions; and learned to diagnose confusion matrices and F1 scores rather than raw accuracy alone.</p>
+                </div>
+            </div>
+            <div class="case-study-footer">
+                <a href="https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML" target="_blank" class="btn"><i class="bx bx-link-external"></i> Live / Code</a>
+                <a href="https://docs.google.com/document/d/1_oodzjCMsRzYy4F0RZciY5jI-XosqVEm/edit?usp=sharing" target="_blank" class="btn btn-outline"><i class="bx bx-file"></i> Documentation</a>
+                <a href="https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML" target="_blank" class="btn btn-outline"><i class="bx bxl-github"></i> View GitHub</a>
+            </div>
+        </div>
+
+        <!-- EpicOutlet Case Study -->
+        <div id="modal-epicoutlet" class="case-study-modal">
+            <div class="case-study-header">
+                <div>
+                    <span class="case-study-badge">Full-Stack E-Commerce with AI</span>
+                    <h2>EpicOutlet</h2>
+                    <p class="case-study-tagline">An online store with an AI shopping assistant built in.</p>
+                </div>
+                <button class="case-study-close" aria-label="Close Case Study">&times;</button>
+            </div>
+            <div class="case-study-body">
+                <div class="case-study-section">
+                    <h4><i class="bx bx-compass"></i> Overview</h4>
+                    <p>A full-stack e-commerce marketplace built with Django 5.2 that marries traditional digital storefront workflows (multi-category catalogs, cart, favourites, and a Jazzmin-styled back-office) with Shop-Bot—an AI conversational shopping assistant.</p>
+                </div>
+
+                <div class="case-study-section case-study-gallery-section">
+                    <h4><i class="bx bx-images"></i> Storefront & AI Shopping Assistant Previews</h4>
+                    <div class="case-study-gallery-grid">
+                        <div class="cs-gallery-item">
+                            <img src="images/E1.webp" width="1600" height="915" alt="EpicOutlet Storefront" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Modern Product Catalog &amp; Cart</span>
+                        </div>
+                        <div class="cs-gallery-item">
+                            <img src="images/E3.webp" width="1600" height="851" alt="EpicOutlet Department Grid" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Category &amp; Wishlist Management</span>
+                        </div>
+                        <div class="cs-gallery-item">
+                            <img src="images/E4.webp" width="1600" height="848" alt="EpicOutlet AI Shop-Bot" loading="lazy" decoding="async">
+                            <span class="cs-gallery-caption">Tool-Calling Shop-Bot Assistant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-store-alt"></i> Store Capabilities & REST API</h4>
+                    <ul class="case-study-list">
+                        <li><strong>Broad Categories:</strong> Mobile, Fashion, Electronics, Home, and Grocery collections.</li>
+                        <li><strong>Shopper Experience:</strong> Persistent shopping cart, favourites wishlist, and user account management.</li>
+                        <li><strong>REST API:</strong> Endpoints exposed under <code>/api/v1/</code> via <code>django-tastypie</code> for products, categories, cart, and favourites.</li>
+                        <li><strong>Modern Admin:</strong> Jazzmin-themed management portal for inventory tracking, orders, and assets.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-bot"></i> Shop-Bot: The AI Shopping Assistant</h4>
+                    <p>Shop-Bot uses an OpenAI-compatible SDK powered by the Groq API (GPT-OSS 120B) with <strong>native tool-calling (function calling)</strong>. Instead of guessing product availability or fabricating prices, the model triggers a <code>search_products</code> function that queries the live PostgreSQL database filtering by category, price ceiling, vendor, or trending metrics.</p>
+                    <p>It maintains a 12-message conversational memory window so multi-turn chats feel natural, rendering responses in cleanly parsed markdown.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-code-alt"></i> Tech Stack</h4>
+                    <div class="case-study-tags">
+                        <span>Django 5.2</span>
+                        <span>PostgreSQL (Supabase)</span>
+                        <span>django-tastypie</span>
+                        <span>Groq API</span>
+                        <span>Tool-Calling</span>
+                        <span>Cloudinary</span>
+                        <span>Bootstrap 5.3</span>
+                        <span>Gunicorn</span>
+                        <span>Render</span>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="bx bx-bulb"></i> What I Learned</h4>
+                    <p>How tool-calling enables language models to bridge LLM reasoning with live relational databases; how to design clean Django MVT coupled with Tastypie REST APIs; and how to manage Cloudinary cloud media storage, environment variables, and production deployment on Render.</p>
+                </div>
+            </div>
+            <div class="case-study-footer">
+                <a href="https://epicoutlet.onrender.com/" target="_blank" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                <a href="https://github.com/Hudsonmathew1910/EpicOutlet" target="_blank" class="btn btn-outline"><i class="bx bxl-github"></i> View GitHub</a>
+                <a href="https://docs.google.com/document/d/18bkyRjbSQLDdkaHc0iutdPh3kzoF8-Zd/edit?pli=1" target="_blank" class="btn btn-outline"><i class="bx bx-file"></i> Project Document</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
-
-
-

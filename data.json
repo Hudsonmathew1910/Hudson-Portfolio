@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "description": "Knowledge base for Hudson Mathew J's Portfolio AI. Source of truth for answering questions about Hudson's background, skills, projects, and career goals.",
+    "source": "about-me profile",
+    "usage_notes": [
+      "Answer only from the facts in this file. If something is not here, say you don't have that information instead of guessing.",
+      "Prefer specific, verifiable project details (e.g. '3-tier LLM fallback with concurrent racing via ThreadPoolExecutor') over vague claims (e.g. 'worked with AI').",
+      "Hudson is a fresher. Do not overstate experience or claim years of professional work.",
+      "When evaluating a job description for fit, compare its tech stack, role type, location and company type against 'career_targets' and 'company_fit', and check 'will_not_consider'. Give calibrated, honest assessments rather than flattery."
+    ]
+  },
+
+  "profile": {
+    "full_name": "Hudson Mathew J",
+    "current_location": "Bengaluru, Karnataka, India",
+    "status": "Fresher / entry-level candidate with real, deployed project experience",
+    "headline": "Python & AI Developer",
+    "one_line_summary": "I build full-stack products from backend logic and AI integrations to the interface people touch, learning by shipping real-world systems.",
+    "about": "Hudson is a Python and AI developer from Bengaluru (originally from Tuticorin, BCA from Don Bosco College). He learns best by building real software. His flagship project is Hero's AI, a live multi-model AI platform with RAG (Infinsight) and browser extension (Zeno). He interned as a Full Stack Intern at Postulate in 2025 and is currently upskilling at Pyspider. Beyond engineering, his background in design and love for story-driven games like Uncharted and Detroit: Become Human makes him care deeply about product flow and user experience. He is looking for a team building intelligent, data-driven products where he can contribute from day one.",
+    "personal_mission": "To turn ideas into intelligent, reliable software products that work well and feel good to use.",
+    "strengths": [
+      "Fast learner with a project-oriented mindset",
+      "Creative problem solver who combines technical and creative thinking",
+      "Strong curiosity about technology and comfortable learning new tools and frameworks",
+      "Has already built and deployed real, production-grade AI products, not just theory",
+      "Understands RAG, multi-LLM orchestration, and vector search, which is uncommon for a fresher",
+      "Brings graphic design and creative skills that are useful for product and UI work"
+    ]
+  },
+
+  "education": {
+    "degree": "Bachelor of Computer Applications (BCA)",
+    "institution": "Don Bosco College of Arts & Science, Tuticorin",
+    "graduation_year": 2025,
+    "current_upskilling": {
+      "focus": ["Python", "Data Science", "AI"],
+      "where": "Pyspider"
+    }
+  },
+
+  "experience": [
+    {
+      "role": "Full Stack Intern",
+      "company": "Postulate",
+      "year": 2025,
+      "type": "Internship (former)",
+      "summary": "Worked on web development with real-world project requirements.",
+      "responsibilities": [
+        "Web development",
+        "Frontend and backend implementation",
+        "Application maintenance",
+        "Working to real-world project requirements"
+      ]
+    }
+  ],
+
+  "skills": {
+    "programming_languages": {
+      "primary": "Python",
+      "others": ["SQL", "HTML", "CSS"]
+    },
+    "web_frameworks": "Django",
+    "ai_and_ml": [
+      "RAG (Retrieval-Augmented Generation)",
+      "LLMs",
+      "NLP",
+      "Multi-LLM orchestration",
+      "Prompt engineering",
+      "scikit-learn",
+      "TensorFlow/Keras",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "data_science": [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Data cleaning",
+      "Feature engineering",
+      "ML pipelines",
+      "Excel"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "Pinecone (vector database)",
+      "Supabase",
+      "pgvector"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Jupyter Notebook",
+      "Gunicorn",
+      "WhiteNoise"
+    ],
+    "other_technical": [
+      "REST API development",
+      "Google OAuth",
+      "Fernet encryption",
+      "Django ORM",
+      "Bootstrap",
+      "Web search integration",
+      "Database design and query optimization basics"
+    ],
+    "soft_skills": [
+      {
+        "name": "Fast learner",
+        "proof": "Progressed from a basic Django prototype to implementing RAG, vector search, and multithreaded concurrency within a single flagship project."
+      },
+      {
+        "name": "Problem solver",
+        "proof": "Eliminated slow fallback bottlenecks by concurrently racing models via thread pools, slashing API latency by up to 75%."
+      },
+      {
+        "name": "Creative thinker",
+        "proof": "Seamlessly pairs technical engineering with visual design, ensuring applications feel natural and engaging to use."
+      },
+      {
+        "name": "Ownership",
+        "proof": "Deploys, monitors, and maintains real production-accessible platforms with active users instead of stopping at localhost demos."
+      }
+    ],
+    "services_offered": [
+      "AI Chatbot & LLM App Development (Assistants that actually use your data)",
+      "Python & Django Backend Development (Solid backends that keep your app running)",
+      "Data Analysis & Machine Learning (Turn messy data into clear answers)",
+      "Frontend & UI Design (Clean, responsive interfaces people enjoy using)"
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "heros_ai",
+      "name": "Hero's AI",
+      "is_flagship": true,
+      "tagline": "One AI assistant that picks the right brain for every question.",
+      "category": "Multi-Model AI Assistant Platform",
+      "overview": "Hero's AI is a live AI assistant platform built with Django. You type or speak a request, and the system decides what kind of request it is, then sends it to the right handler and language model.",
+      "problem": "Most AI chatbots depend on a single model. If that model is slow or fails, the user is stuck. They also treat every question the same, whether it is code, math, a web search or a file.",
+      "what_i_built": [
+        "Baymax: dispatcher that routes each request with a Gemini -> OpenRouter -> Groq fallback chain.",
+        "Halo: orchestration layer (OrchestratorService) that coordinates parallel multi-step tasks (e.g. concurrent web search and file analysis) and manages seamless provider failover mid-response without losing conversation state.",
+        "Zuno: intelligent media & music assistant (Django app + extension tab) that parses voice/text intents via Groq and automates YouTube and YouTube Music playback with live progress and playback controls.",
+        "NLP intent router that classifies requests (coding, web search, file analysis, creative, math, etc.) before calling any model.",
+        "Fast mode: races two models concurrently and returns whichever answers first.",
+        "Interruptible voice mode.",
+        "Zeno: Chrome/Edge browser extension with right-click Ask Zeno syncing to main chat.",
+        "Web search synthesis, OCR file/image reading, and Google/email auth."
+      ],
+      "core_components": {
+        "baymax": "Core multi-model dispatcher managing the primary fallback pipeline across Gemini, OpenRouter, and Groq.",
+        "halo": "Orchestrator service handling parallel multi-step task execution and mid-response provider failover.",
+        "zuno": "Voice and media assistant integrated into backend endpoints and extension popup to control YouTube/YouTube Music playback via Groq intent extraction.",
+        "zeno": "Browser extension connecting web browsing directly into Hero's AI chat history.",
+        "infinsight": "Embedded RAG data analytics engine to query tabular and PDF datasets in natural language."
+      },
+      "security": [
+        "API keys encrypted with Fernet and never sent to browser.",
+        "CSRF protection, secure HTTP-only sessions, rate limits, and request-size limits."
+      ],
+      "what_i_learned": [
+        "How to design fallback logic so one failing model doesn't break the app.",
+        "Why routing requests before calling an LLM makes the system smarter and cheaper.",
+        "How to handle API keys, authentication and sessions securely.",
+        "How to take a project from prototype to a deployed product."
+      ],
+      "links": {
+        "live": "https://hero-s-ai.alwaysdata.net/",
+        "github": "https://github.com/Hudsonmathew1910/Hero-s-AI",
+        "doc": "https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"
+      },
+      "tech_stack": [
+        "Django 5.2",
+        "Python 3.11",
+        "PostgreSQL (Neon)",
+        "Pinecone",
+        "Gemini",
+        "OpenRouter",
+        "Groq",
+        "Gunicorn",
+        "WhiteNoise"
+      ]
+    },
+    {
+      "id": "infinsight",
+      "name": "Infinsight",
+      "is_flagship": false,
+      "tagline": "Upload your data. Ask questions in plain English.",
+      "category": "RAG-Powered Data Analytics Engine",
+      "overview": "Infinsight is the data analyst inside Hero's AI. It lets anyone explore a spreadsheet or PDF without writing a line of code.",
+      "problem": "Data is often locked in files that only technical people can analyse. Everyone else ends up scrolling through rows and guessing.",
+      "workflow": [
+        "Upload a CSV, Excel or PDF file.",
+        "File is split into chunks and converted into embeddings with gemini-embedding-001.",
+        "Embeddings are stored in Pinecone vector database.",
+        "User asks questions in natural language.",
+        "System retrieves relevant data and generates Pandas code.",
+        "Code runs safely in an asteval sandbox to deliver answers."
+      ],
+      "capabilities": [
+        "RFM analysis (customer segmentation)",
+        "Time-series trends",
+        "Forecasting with linear regression",
+        "Answers over both tables and PDF text"
+      ],
+      "what_i_learned": [
+        "How RAG works in practice: chunking, embeddings and retrieval.",
+        "Why running AI-generated code needs a sandbox, not plain eval.",
+        "How to turn a technical idea into a feature that non-technical users can use."
+      ],
+      "links": {
+        "live": "https://hero-s-ai.alwaysdata.net/infinsight/",
+        "github": "https://github.com/Hudsonmathew1910/Hero-s-AI",
+        "doc": "https://docs.google.com/document/d/1ob42_kMVSGRNzEID4G3BnRPwnUiEFgmRnpogke7tMS0/edit?usp=sharing"
+      },
+      "tech_stack": [
+        "Python",
+        "Pandas",
+        "Pinecone",
+        "Gemini embeddings",
+        "asteval",
+        "Django"
+      ]
+    },
+    {
+      "id": "spaceship_titanic",
+      "name": "Spaceship Titanic",
+      "is_flagship": false,
+      "category": "Machine learning (Kaggle)",
+      "description": "Binary classification project that predicts whether a passenger is 'dimensionally transported'.",
+      "approach": "Weighted ensemble of multiple models, combined using tuned ensemble weights.",
+      "tagline": "A machine learning project that combines several models to get one stronger prediction.",
+      "overview": "Kaggle competition project predicting which passengers of a fictional spaceship were transported to another dimension (binary classification).",
+      "steps": [
+        "Explored data to understand missing values and relationships.",
+        "Cleaned data with correlation-driven imputations, medians, and strategic drops.",
+        "Engineered features including Cabin split into Deck, Number, and Side.",
+        "One-hot encoded categories and standardized numerical values with StandardScaler.",
+        "Trained multiple models (Logistic Regression, Random Forest, XGBoost, CatBoost, AdaBoost, KNN, Decision Tree, DNN).",
+        "Combined models into a weighted ensemble for stability and evaluated via accuracy, classification report, and confusion matrix."
+      ],
+      "models": [
+        "Logistic Regression",
+        "DNN (3 hidden layers)",
+        "Random Forest",
+        "XGBoost",
+        "CatBoost",
+        "AdaBoost",
+        "KNN",
+        "Decision Tree"
+      ],
+      "feature_engineering": [
+        "Split Cabin into Deck, Number, and Side",
+        "One-hot encoding for categorical features",
+        "Correlation-driven missing-value handling (fill, drop, or impute per feature)",
+        "StandardScaler normalization"
+      ],
+      "what_i_learned": [
+        "Feature engineering often matters more than the choice of model.",
+        "How different algorithms behave on the same data.",
+        "How to read evaluation results instead of looking only at accuracy."
+      ],
+      "links": {
+        "github": "https://github.com/Hudsonmathew1910/Spaceship_Titanic_ML",
+        "doc": "https://docs.google.com/document/d/1_oodzjCMsRzYy4F0RZciY5jI-XosqVEm/edit?usp=sharing"
+      },
+      "evaluation": ["Accuracy", "Classification report", "Confusion matrix"],
+      "tech_stack": [
+        "Python",
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "TensorFlow/Keras",
+        "XGBoost",
+        "CatBoost",
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "id": "epicoutlet",
+      "name": "EpicOutlet",
+      "is_flagship": false,
+      "tagline": "An online store with an AI shopping assistant built in.",
+      "category": "Full-stack e-commerce web application",
+      "built": "March 2026",
+      "overview": "EpicOutlet is a full-stack e-commerce website built with Django 5.2. It features a complete shopping flow plus Shop-Bot, an AI chatbot that queries live products to help customers shop.",
+      "product_categories": ["Mobile", "Fashion", "Electronic", "Home", "Grocery"],
+      "shop_bot": {
+        "description": "AI chatbot that helps users find products using tool-calling.",
+        "llm": "GPT-OSS 120B via the Groq API",
+        "sdk": "OpenAI-compatible Python SDK",
+        "tool_calling": "search_products function that filters by category, price, vendor, and trending items",
+        "chat_history": "12-message session history",
+        "response_rendering": "Markdown-formatted responses via Marked.js"
+      },
+      "rest_api": {
+        "library": "django-tastypie",
+        "base_path": "/api/v1/",
+        "exposes": ["Product", "Category", "Cart", "Favourite"]
+      },
+      "what_i_learned": [
+        "How tool-calling lets an AI query live databases instead of hallucinating answers.",
+        "How to design a REST API and an MVT architecture cleanly in Django.",
+        "How to manage Cloudinary cloud media storage, environment variables, and cloud deployments."
+      ],
+      "links": {
+        "live": "https://epicoutlet.onrender.com/",
+        "github": "https://github.com/Hudsonmathew1910/EpicOutlet",
+        "doc": "https://docs.google.com/document/d/18bkyRjbSQLDdkaHc0iutdPh3kzoF8-Zd/edit?pli=1"
+      },
+      "infrastructure": {
+        "image_hosting": "Cloudinary",
+        "database": "PostgreSQL via Supabase",
+        "server": "Gunicorn",
+        "static_files": "WhiteNoise",
+        "deployment": "Render",
+        "environment_config": "python-dotenv"
+      },
+      "frontend": "Bootstrap 5.3",
+      "tech_stack": [
+        "Django 5.2",
+        "Python",
+        "django-tastypie",
+        "Groq API",
+        "OpenAI Python SDK",
+        "Marked.js",
+        "Bootstrap 5.3",
+        "PostgreSQL (Supabase)",
+        "Cloudinary",
+        "Gunicorn",
+        "WhiteNoise",
+        "Render",
+        "python-dotenv",
+        "Jazzmin"
+      ]
+    }
+  ],
+
+  "other_portfolio_projects": [
+    {
+      "name": "Personal Portfolio Website"
+    },
+    {
+      "name": "AI Shop Bot"
+    },
+    {
+      "name": "AI Portfolio Assistant",
+      "tech": "Heros API"
+    },
+    {
+      "name": "Digenie Visual Designer Assessment",
+      "description": "Branding and campaign materials"
+    }
+  ],
+
+  "career_targets": {
+    "job_types": [
+      "Python Developer",
+      "AI/ML Developer",
+      "Data Analyst",
+      "Data Scientist (entry level)",
+      "Backend Developer",
+      "Full Stack Developer (Python)",
+      "Software Engineer"
+    ],
+    "experience_level": "Fresher / Entry Level / Trainee / Internship (0-1 year)",
+    "work_type": "Hybrid preferred; open to remote or onsite",
+    "target_locations": ["Bengaluru", "Chennai", "Coimbatore"],
+    "salary_expectation": "Rs 2.5 LPA or above (negotiable based on role and company)",
+    "will_not_consider": [
+      "Pure manual testing / QA-only roles",
+      "Non-technical roles (HR, sales, support)",
+      "Roles with no Python involvement",
+      "Outsourcing-only companies that don't build products"
+    ]
+  },
+
+  "company_fit": {
+    "company_types": [
+      {
+        "priority": "Best",
+        "type": "AI product startups (chatbots, RAG tools, AI assistants)",
+        "reason": "Already built this with Hero's AI"
+      },
+      {
+        "priority": "Best",
+        "type": "Conversational AI companies (voice bots, LLM apps)",
+        "reason": "Baymax and RAG experience"
+      },
+      {
+        "priority": "Strong",
+        "type": "Data analytics and AI consulting firms",
+        "reason": "ML, Pandas, and visualization skills"
+      },
+      {
+        "priority": "Strong",
+        "type": "SaaS product companies (Django backend)",
+        "reason": "EpicOutlet and full-stack experience"
+      },
+      {
+        "priority": "Good",
+        "type": "IT services companies with AI/ML teams",
+        "reason": "Good entry point with a large fresher intake"
+      }
+    ],
+    "target_companies": [
+      "Fractal Analytics",
+      "Yellow.ai",
+      "Haptik",
+      "Zoho",
+      "Freshworks",
+      "Quantiphi",
+      "Tiger Analytics",
+      "Atos",
+      "CGI",
+      "NTT DATA",
+      "Cognizant (AI teams)"
+    ]
+  },
+
+  "faq": [
+    {
+      "question": "What do you specialise in?",
+      "answer": "Python development with a focus on AI integrations, backend systems and data work. I also build frontends, so I can deliver a full product."
+    },
+    {
+      "question": "Are you a fresher? Do you have real experience?",
+      "answer": "Yes, I’m a 2025 graduate. I interned as a Full Stack developer at Postulate, and I’ve built and deployed live projects such as Hero’s AI and EpicOutlet."
+    },
+    {
+      "question": "What is Hero’s AI in simple words?",
+      "answer": "It’s an AI assistant platform that chooses the best AI model for each request, handles voice and files, and can analyse your spreadsheets through Infinsight."
+    },
+    {
+      "question": "Can you build a chatbot for my business?",
+      "answer": "Yes. I can build chatbots that use your own documents (RAG) and connect to your product data, like the Shop-Bot in EpicOutlet."
+    },
+    {
+      "question": "What technologies do you use?",
+      "answer": "Python, Django, SQL, HTML, CSS, Pandas, scikit-learn, TensorFlow, PostgreSQL, Pinecone, Groq, and Gemini."
+    },
+    {
+      "question": "Do you do design work too?",
+      "answer": "Yes. I do UI concepts, graphics, illustration and editing."
+    },
+    {
+      "question": "Are you available for internships or full-time roles?",
+      "answer": "Yes, I’m open to both, with a preference for hybrid roles in Bengaluru, Chennai or Coimbatore."
+    },
+    {
+      "question": "How can I contact you?",
+      "answer": "Use the contact form, email me at hudsonmathew2004@gmail.com, or message me on LinkedIn. I reply promptly."
+    }
+  ]
+}

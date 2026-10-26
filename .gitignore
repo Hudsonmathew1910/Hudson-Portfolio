@@ -1,0 +1,41 @@
+# ---------- Secrets (never commit) ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Vercel ----------
+.vercel
+
+# ---------- Not part of the website ----------
+# Separate Django project (has its own .gitignore; keep it in its own repo)
+AI/
+# Scratch scripts and notes (ai-heros.py contains an old API key)
+*.py
+text.txt
+chat_memory.json
+
+# Local backups of the pre-redesign files
+_backup/
+
+# Original full-size images (the site uses the optimised .webp copies in images/ and photos/).
+# Delete these two lines if you want the originals stored in git as well (~15 MB).
+My Photos/
+images/*.png
+
+# ---------- Dependencies & caches ----------
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+
+# ---------- Logs ----------
+*.log
+npm-debug.log*
+
+# ---------- Editor & OS files ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

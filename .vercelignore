@@ -1,0 +1,27 @@
+# Never upload secrets: static files in this folder are served publicly
+.env
+.env.*
+
+# Local-only Python / Django work, not part of the static site
+AI/
+*.py
+chat_memory.json
+text.txt
+.vscode/
+.idea/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.gitignore
+.vercelignore
+
+# Local tooling and backups
+dev-server.mjs
+_backup/
+
+# Original full-size images (the site uses the optimised WebP copies)
+My Photos/
+images/*.png
+README.md

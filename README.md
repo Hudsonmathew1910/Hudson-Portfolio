@@ -1,86 +1,44 @@
-# Hudson Mathew — Portfolio Site + AI Assistant
+# Hudson Mathew: Portfolio
 
-This project is a two-part personal branding setup:
-1. A **static single-page portfolio website** built with **HTML, CSS, and JavaScript**
-2. A **Django-based AI portfolio assistant** powered by **GPT-4o-mini via OpenRouter**, designed to answer questions only about Hudson using a local `data.json` knowledge base
+Static portfolio site with three Vercel serverless functions:
 
-Together, they provide a modern portfolio plus an interactive chat experience for recruiters, clients, and collaborators.
+| Route | What it does | Needs |
+|---|---|---|
+| `/api/chat` | Huddy, the AI assistant (proxies Hero's AI) | `HEROS_API_KEY` |
+| `/api/transcribe` | Voice input for Huddy | `HEROS_API_KEY` |
+| `/api/contact` | Sends contact-form messages by email (Resend) | `RESEND_API_KEY` |
 
----
+No build step and no npm dependencies.
 
-## Features
+## Run locally
 
-### Portfolio Website (HTML/CSS/JS)
-- Single-page layout with sections: **Home, About, Services, Projects, Contact**
-- Anchor navigation (`#home`, `#about`, etc.)
-- Mobile-friendly responsive design with hamburger menu
-- **Read More / Read Less** toggle in the About section
-- Contact form using a `mailto:` flow (no backend required)
-- Dark theme with clean UI and smooth transitions
-- Floating button/link to open the AI Assistant app
+```bash
+cp .env.example .env   # then fill in the keys
+npm run dev            # http://localhost:3000
+```
 
-### AI Portfolio Assistant (Django + OpenRouter)
-- Chatbot that answers questions like:
-	- “What projects has Hudson built?”
-	- “What are Hudson’s skills?”
-- Uses **GPT-4o-mini** through the **OpenRouter API**
-- Knowledge comes from a single editable file: `data.json`
-- Built-in safeguards to keep answers on-topic and prevent hallucinations
-- Conversation history trimming to control token usage and keep the app fast
+`dev-server.mjs` serves the site, runs the `/api` functions with your `.env`, and applies the
+same headers as production (from `vercel.json`), so CSP problems show up locally too.
 
----
+## Deploy to Vercel
 
-## Tech Stack
-### Frontend (Portfolio)
-- **HTML5** — single-page structure
-- **CSS3** — dark theme, responsive layout, animations
-- **JavaScript (Vanilla)** — menu toggle, read-more toggle, `mailto:` contact logic
-- **Icons:** Boxicons, Font Awesome
-- **Fonts:** Google Fonts (Montserrat)
+1. **Set your domain.** Find and replace `your-portfolio.vercel.app` in `index.html`,
+   `robots.txt` and `sitemap.xml` with your real domain.
+2. **Create the project.** Either push this folder to GitHub and import it at
+   vercel.com/new, or run `npx vercel` in this folder. Framework preset: **Other**.
+   Leave the build and output settings empty.
+3. **Add environment variables** (Project → Settings → Environment Variables, for Production
+   and Preview):
+   - `HEROS_API_KEY`
+   - `RESEND_API_KEY`
+   - optional: `CONTACT_TO_EMAIL`, `CONTACT_FROM`
+4. **Deploy**, then check: Huddy replies, the contact form delivers an email, and
+   `/does-not-exist` shows the custom 404 page.
 
-### Backend (AI Assistant)
-- **Python**
-- **Django**
-- **OpenRouter API** — routes requests to GPT-4o-mini
-- **requests** — HTTP calls from Django
-- **WhiteNoise** — static file serving in production
-- **python-dotenv** — environment variable management
+## Project notes
 
----
-
-## How It Works
-
-### Portfolio Website
-The portfolio is fully static (no backend). JavaScript handles:
-- Mobile navbar open/close + auto-close on link click
-- About section expand/collapse
-- Contact form → opens the user’s email client via `mailto:`
-
-### AI Assistant
-On each chat request:
-1. Django loads `data.json`
-2. Data is compacted into a short summary for the prompt
-3. Conversation history is sanitized and trimmed (last ~12 turns)
-4. A strict system prompt enforces “Hudson-only” answers
-5. The app calls OpenRouter and returns the response to the browser UI
-
----
-
-## Folder / Files (typical)
-- `index.html` — portfolio page
-- `style.css` — portfolio styling
-- `script.js` — portfolio interactivity
-- `portfolio_ai/` — Django project
-- `chat/` — Django app for chatbot
-- `data.json` — chatbot knowledge base
-
----
-
-## Deployment
-- **Portfolio:** GitHub Pages or any static hosting (no build step)
-- **AI Assistant:** Deploy Django app on Render / Replit (Gunicorn recommended), with WhiteNoise for static files
-
----
-
-## Author
-**Hudson Mathew** — March 2026
+- `.vercelignore` keeps secrets, the Django `AI/` project, original PNGs (`My Photos/`,
+  `images/*.png`) and local tooling out of the deployment.
+- The site uses the optimised WebP images in `images/` and `photos/`. If you replace a
+  screenshot, export it as WebP (about 1600px wide) and update the `width`/`height` in `index.html`.
+- `_backup/` holds the pre-redesign HTML/CSS/JS (local only).
